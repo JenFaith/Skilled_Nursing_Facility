@@ -8,6 +8,14 @@ pandas = "*"
 numpy = "*"
 scikit-learn = "*"
 jupyter = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+jinja2 = "*"
+gunicorn = "*"
+bs4 = "*"
+requests = "*"
+sodapy = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
