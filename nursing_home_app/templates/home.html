@@ -1,0 +1,14 @@
+<!-- Home Page --> 
+
+{% block body %}
+<h1>Welcome!</h1>
+<br><br>
+<h2>Search for skilled nursing facility by:</h2>
+    <form method="get" action="/location_search">
+        <button type="submit">Location on Map</button>
+    </form>
+
+    <form method="get" action="/name_search">
+        <button type="submit">Facility Name</button>
+    </form>
+{% endblock %}

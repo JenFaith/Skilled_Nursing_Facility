@@ -16,6 +16,15 @@ bs4 = "*"
 requests = "*"
 sodapy = "*"
 psycopg2 = "*"
+matplotlib = "*"
+seaborn = "*"
+geopy = "*"
+folium = "*"
+rasterio = "*"
+earthpy = "*"
+gensim = "*"
+spacy = "*"
+pyldavis = "*"
 
 [dev-packages]
 

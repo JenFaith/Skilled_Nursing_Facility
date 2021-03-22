@@ -1,0 +1,19 @@
+<!-- Home Page --> 
+
+{% block body %}
+<p>
+    This is a report about {{facility_name}}.
+</p>
+<br><br>
+<h3>
+Data Reporting Details:
+<h3
+<p>
+    Becuase of COVID-19, facilities were expected to file weekly reports starting May 24th. 
+    {{facility_name}} has filed {{sub}} of the {{number_of_expected_filings}} expected filings.
+</p>
+<br>
+<div></div>
+<!--img src="data:image/png;base64, {{ plot_url }}"-->
+</div>
+{% endblock %}
