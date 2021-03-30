@@ -1,0 +1,14 @@
+{% block body %}
+<h1>Register</h1>
+
+<form action = "/register" method="post">
+
+    <input autocomplete="off" autofocus name = "name" placeholder = "First Name" type="text">
+    <input autocomplete="off" autofocus name = "email" placeholder = "Email Address" type ="email">
+    <input autocomplete="off" autofocus name = "password" placeholder = "Password" type ="password">
+    <input type = "submit" value = Register></input>
+
+</form>
+<h2>{{ message }}</h2>
+<p>Already have an account? <a href = "/login"> Click here to login</a></p>
+{% endblock %}

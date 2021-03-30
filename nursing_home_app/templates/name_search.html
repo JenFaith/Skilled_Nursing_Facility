@@ -2,8 +2,13 @@
 
 {% block body %}
 <h1>Name Search</h1>
-  <form action="/confirm" method=get>
+  <form action="/name_search" method="post">
     <input name = "facility_name" type = "text">
     <input type = "submit">
   </form>
+
+  <h2>{{ message }}</h2><br>
+      <p>{{ name1 }} {{ ad1 }}</p><br>
+      <p>{{ name2 }} {{ ad2 }}</p><br>
+      <p>{{ name3 }} {{ ad3 }}</p><br>
 {% endblock %}
