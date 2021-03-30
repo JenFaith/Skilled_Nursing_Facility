@@ -25,6 +25,8 @@ earthpy = "*"
 gensim = "*"
 spacy = "*"
 pyldavis = "*"
+python-dotenv = "*"
+flask-session = "*"
 
 [dev-packages]
 

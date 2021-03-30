@@ -8,10 +8,6 @@ import sqlite3
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# def pull_df(sql_name='nhs_descriptions.sqlite3'):
-#     con = sqlite3.connect(sql_name)
-#     df = pd.read_sql_query("'SELECT * FROM Data", con)
-#     return df
 
 def return_similar(user_type, sql_name='nhs_descriptions.sqlite3'):
     # connect to database and pull df
@@ -49,5 +45,5 @@ def return_similar(user_type, sql_name='nhs_descriptions.sqlite3'):
     ad3 = df[df['federal_provider_number']==num3]['full_address'].values[0]
     return num1, num2, num3, name1, name2, name3, ad1, ad2, ad3
 
-num1, num2, num3, name1, name2, name3, ad1, ad2, ad3 = return_similar('seeson carecenter')
-print(name1)
+# num1, num2, num3, name1, name2, name3, ad1, ad2, ad3 = return_similar('seeson carecenter')
+# print(name1)

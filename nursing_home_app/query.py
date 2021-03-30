@@ -36,11 +36,3 @@ def query_report(facility_name):
     # img.seek(0)
     # plot_url = base64.b64encode(img.getvalue())
     return [number_of_expected_filings, sub]
-
-
-#Running Tests
-a = query_report('AHC LEWIS COUNTY')
-number_of_expected_filings=a[0]
-sub = a[1]
-print(number_of_expected_filings)
-print(sub)
