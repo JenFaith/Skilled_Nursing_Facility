@@ -90,3 +90,12 @@ def user_session_storage(email, facility_name):
         cursor.execute(insert_command, data)
         conn.commit()
 
+def pull_user_facils(email):
+    """
+    Returns user's saved facilities from elephantSQL Database
+    if it exists.
+    """
+    query = "SELECT * FROM session_data WHERE email = '{}'".format(email)
+    cursor.execute(query)
+    results = cursor.fetchall()
+    return results

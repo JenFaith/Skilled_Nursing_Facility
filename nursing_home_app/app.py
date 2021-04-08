@@ -9,9 +9,9 @@ import numpy as np
 import jinja2
 import requests
 import re
-from .query import query_report
+from .query import facility_number, Report
 from .name_search import return_similar
-from .user_database import insert_user_data, pull_user_data, login_process
+from .user_database import insert_user_data, pull_user_data, login_process, user_session_storage, pull_user_facils
 import datetime
 from datetime import date
 
@@ -120,19 +120,32 @@ def create_app():
         ad_1= ''
         ad_2= ''
         ad_3= ''
+        htmlvar_1 = ''
+        htmlvar_2 = ''
+        htmlvar_3 = ''
         if request.method == 'POST':
             facil_name=request.form.get('facility_name')
             num1, num2, num3, name1, name2, name3, ad1, ad2, ad3 = return_similar(facil_name)
             # return suggested names with addresses 
             # plus, make them slightly less obnoxious to read
             return render_template('name_search.html', message = "Did you mean:",
-                                   name1=name1.title() + 'at', name2=name2.title() + 'at', name3=name3.title() + 'at',
-                                   ad1=ad1.title(), ad2=ad2.title(), ad3=ad3.title())    
+                                   name1=name1.title(), name2=name2.title(), name3=name3.title(),
+                                   ad1=' at ' + ad1.title(), ad2=' at ' + ad2.title(), ad3=' at ' + ad3.title(), 
+                                   # Returns variable href tag to allow user to click on facility name
+                                   # And be moved to a report on that facility.
+                                   # Doing it this way also allows the application to capture the users selection
+                                   # See name_search.html to see how this variable was used
+                                   htmlvar1 = '/report?facility_name='+name1.replace(' ', '+'), 
+                                   htmlvar2 = '/report?facility_name='+name2.replace(' ', '+'), 
+                                   htmlvar3 = '/report?facility_name='+name3.replace(' ', '+'))
+        # TODO # In final stages, make these buttons instead of hyperlinking text!
         return render_template('name_search.html', message = message,
                                name1=name_1, name2=name_2, name3=name_3, 
-                               ad1=ad_1, ad2=ad_2, ad3=ad_3)    
+                               ad1=ad_1, ad2=ad_2, ad3=ad_3, 
+                               htmlvar1=htmlvar_1, htmlvar2=htmlvar_2, htmlvar3=htmlvar_3)
     
     # @app.route('/confirm', methods = ['GET', 'POST'])
+    # TODO # Make this page combined with /name_search
     # def recommendations():
     #     """
     #     Confirms application has found correct facility name.
@@ -158,15 +171,29 @@ def create_app():
         Returns report on facility.
         """
         facility_name=request.args.get('facility_name')
-        if request.method == "POST":
-            name=request.args.get('facility_name')
-        a = query_report(facility_name)
-        number_of_expected_filings=a[0]
-        sub = a[1]
+        session['save']=facility_name
+        
+        # Return provider number for facility name
+        prov_num = facility_number(facility_name)
+        # Generate report
+        facility_rep = Report(prov_num)
+        # Return covid report
+        covid_rep = facility_rep.covid_report()
+        # a = query_report(facility_name)
+        # number_of_expected_filings=a[0]
+        # sub = a[1]
         return render_template('report.html', 
-                               facility_name = facility_name, 
-                               number_of_expected_filings = number_of_expected_filings,
-                               sub = sub)
+                               facility_name = facility_name,
+                               covid_report = covid_rep)
+                            #    number_of_expected_filings = number_of_expected_filings,
+                            #    sub = sub)
     
+    @app.route('/myfacilities', methods = ['GET', 'POST'])
+    def user_page():
+        facility_name = session['save']
+        email = session['email']
+        user_session_storage(email, facility_name)
+        user_data = pull_user_facils(email)
+        return render_template('user_page.html', user_data = user_data)
     
     return app

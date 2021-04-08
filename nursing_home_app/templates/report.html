@@ -7,13 +7,39 @@
 <br><br>
 <h3>
 Data Reporting Details:
-<h3
-<p>
-    Becuase of COVID-19, facilities were expected to file weekly reports starting May 24th. 
-    {{facility_name}} has filed {{sub}} of the {{number_of_expected_filings}} expected filings.
-</p>
+</h3>
+<!-- Home Page --> 
+<table class="centered thick-border">
+    <tr>
+            <th>Number of Expected Filings</th>
+            <th>Actual Reports Submitted</th>
+            <th>Average Number of Residents Since 1/1/2020</th>
+            <th>Total Resident Covid-19 Cases</th>
+            <th>Percentage of Resident COVID-19 Cases</th>
+            <th>Percent of Resident COVID-19 Deaths</th>
+            <th>Number of Nursing Shortages Since 1/1/2020</th>
+            <th>Number of Clinical Staff Shortages Since 1/1/2020</th>
+            <th>Number of Aid Shortages Since 1/1/2020</th>
+            <th>Currently Occupied Number of Beds</th>
+    </tr>
+    {% for a, b in covid_report.items() %}
+            <tr>
+                    <td>{{ a }}</td>
+                    <td>{{ b }}</td>
+            </tr>
+    {% endfor %}
+</table>
+
+
+
+
 <br>
-<div></div>
-<!--img src="data:image/png;base64, {{ plot_url }}"-->
-</div>
+<form action = "/myfacilities" method = "post">
+    <input type = "submit" value = "Save This Facility" ></input>
+</form>
+<form action = "/" method = "get">
+    <input type = "submit" value = "Find Another Facility" ></input>
+</form>
+
+
 {% endblock %}
