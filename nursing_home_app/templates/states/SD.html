@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a2bf59b1fb4442ab31e3fb1e1d3750f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7a2bf59b1fb4442ab31e3fb1e1d3750f" ></div>
+        
+</body>
+<script>    
+    
+            var map_7a2bf59b1fb4442ab31e3fb1e1d3750f = L.map(
+                "map_7a2bf59b1fb4442ab31e3fb1e1d3750f",
+                {
+                    center: [45.456798, -99.440137],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4e92acb97c148109ed4e2ad17883af5 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/jenfaith/ckm3ufeuf0v8y17qqi8d7gfre/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiamVuZmFpdGgiLCJhIjoiY2ttM3QzYnI1MDhzZTJucWRubXlzMHphdCJ9.3FsZLNb_YZlAwssJDfV4Cw",
+                {"attribution": "Map Box Attribute", "detectRetina": false, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var marker_f853e3091f474ccc9b47b9cb7c9dd478 = L.marker(
+                [45.456798, -98.100144],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_fda5a29106f54e4391a7b0ed3cd973bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f853e3091f474ccc9b47b9cb7c9dd478.setIcon(icon_fda5a29106f54e4391a7b0ed3cd973bd);
+        
+    
+        var popup_6d7c128d56c24f3dbbb67eb7d529da81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50df2c731483457c8629c7179cbe7a61 = $(`<div id="html_50df2c731483457c8629c7179cbe7a61" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+GROTON target="_blank">AVANTARA GROTON</a></div>`)[0];
+            popup_6d7c128d56c24f3dbbb67eb7d529da81.setContent(html_50df2c731483457c8629c7179cbe7a61);
+        
+
+        marker_f853e3091f474ccc9b47b9cb7c9dd478.bindPopup(popup_6d7c128d56c24f3dbbb67eb7d529da81)
+        ;
+
+        
+    
+    
+            var marker_f007069a0fe740e0b93ca172fbff6b98 = L.marker(
+                [44.513034, -99.440137],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_189b4479d1ea4a0488d4527821fc6481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f007069a0fe740e0b93ca172fbff6b98.setIcon(icon_189b4479d1ea4a0488d4527821fc6481);
+        
+    
+        var popup_549f8913a3ca4cb4ae4b7f1769fae2b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d2a19b346d14fa7b54dad75ba8c08bc = $(`<div id="html_8d2a19b346d14fa7b54dad75ba8c08bc" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HIGHMORE+HEALTH target="_blank">HIGHMORE HEALTH</a></div>`)[0];
+            popup_549f8913a3ca4cb4ae4b7f1769fae2b0.setContent(html_8d2a19b346d14fa7b54dad75ba8c08bc);
+        
+
+        marker_f007069a0fe740e0b93ca172fbff6b98.bindPopup(popup_549f8913a3ca4cb4ae4b7f1769fae2b0)
+        ;
+
+        
+    
+    
+            var marker_7db1f471008946c9b4f7b62accf62914 = L.marker(
+                [43.082156, -97.156703],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_8f0cf010e2c547d6b098e1889369d2b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7db1f471008946c9b4f7b62accf62914.setIcon(icon_8f0cf010e2c547d6b098e1889369d2b0);
+        
+    
+        var popup_e5a735d664be41c9bb87f4fa7e46921b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c11b4c266df34f63b872588f9d5bb355 = $(`<div id="html_c11b4c266df34f63b872588f9d5bb355" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SUNSET+MANOR+AVERA+HEALTH target="_blank">SUNSET MANOR AVERA HEALTH</a></div>`)[0];
+            popup_e5a735d664be41c9bb87f4fa7e46921b.setContent(html_c11b4c266df34f63b872588f9d5bb355);
+        
+
+        marker_7db1f471008946c9b4f7b62accf62914.bindPopup(popup_e5a735d664be41c9bb87f4fa7e46921b)
+        ;
+
+        
+    
+    
+            var marker_bd3eb242447948a38e3a8514afad25c7 = L.marker(
+                [43.004549000000004, -97.102532],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_bbfd8a59adee40dd8ab7e2613b74dbaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bd3eb242447948a38e3a8514afad25c7.setIcon(icon_bbfd8a59adee40dd8ab7e2613b74dbaf);
+        
+    
+        var popup_93febb1444004fe1aea4082f8ccabb17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82f05d00b96e477bb8c9f6b6bb99424d = $(`<div id="html_82f05d00b96e477bb8c9f6b6bb99424d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WAKONDA+HERITAGE+MANOR target="_blank">WAKONDA HERITAGE MANOR</a></div>`)[0];
+            popup_93febb1444004fe1aea4082f8ccabb17.setContent(html_82f05d00b96e477bb8c9f6b6bb99424d);
+        
+
+        marker_bd3eb242447948a38e3a8514afad25c7.bindPopup(popup_93febb1444004fe1aea4082f8ccabb17)
+        ;
+
+        
+    
+    
+            var marker_df89873038ba4600817f6647f49c695c = L.marker(
+                [44.884758, -97.736549],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_df12a3486a924425a78e59f612dbdff2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_df89873038ba4600817f6647f49c695c.setIcon(icon_df12a3486a924425a78e59f612dbdff2);
+        
+    
+        var popup_4e8b52d23a2e46b4ae37c068d9367fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93bf0be75e4d47498c28d2cfa226980d = $(`<div id="html_93bf0be75e4d47498c28d2cfa226980d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+CLARK+CITY target="_blank">AVANTARA CLARK CITY</a></div>`)[0];
+            popup_4e8b52d23a2e46b4ae37c068d9367fc7.setContent(html_93bf0be75e4d47498c28d2cfa226980d);
+        
+
+        marker_df89873038ba4600817f6647f49c695c.bindPopup(popup_4e8b52d23a2e46b4ae37c068d9367fc7)
+        ;
+
+        
+    
+    
+            var marker_457dd84b23ac42269b397564213a9890 = L.marker(
+                [45.031747, -99.133056],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_5e8eda716e8a4f0da6b749f839df4004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_457dd84b23ac42269b397564213a9890.setIcon(icon_5e8eda716e8a4f0da6b749f839df4004);
+        
+    
+        var popup_0f766fb52de544b5b01be78ec0428582 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efdf8058f1494b8bab5bdeaafcb0f2eb = $(`<div id="html_efdf8058f1494b8bab5bdeaafcb0f2eb" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=FAULKTON+SENIOR+LIVING target="_blank">FAULKTON SENIOR LIVING</a></div>`)[0];
+            popup_0f766fb52de544b5b01be78ec0428582.setContent(html_efdf8058f1494b8bab5bdeaafcb0f2eb);
+        
+
+        marker_457dd84b23ac42269b397564213a9890.bindPopup(popup_0f766fb52de544b5b01be78ec0428582)
+        ;
+
+        
+    
+    
+            var marker_fbaac2941f194d72afc71007c68ef371 = L.marker(
+                [44.897676, -97.113787],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_f7c9370e2000441baabfc2e366208a34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fbaac2941f194d72afc71007c68ef371.setIcon(icon_f7c9370e2000441baabfc2e366208a34);
+        
+    
+        var popup_f1bc763f21504e6f92b292f4d415923b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26ba812ecd1647ad9ce759542764f029 = $(`<div id="html_26ba812ecd1647ad9ce759542764f029" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=JENKIN'S+LIVING+CENTER target="_blank">JENKIN'S LIVING CENTER</a></div>`)[0];
+            popup_f1bc763f21504e6f92b292f4d415923b.setContent(html_26ba812ecd1647ad9ce759542764f029);
+        
+
+        marker_fbaac2941f194d72afc71007c68ef371.bindPopup(popup_f1bc763f21504e6f92b292f4d415923b)
+        ;
+
+        
+    
+    
+            var marker_3856aee487b14c28a506cd7749709662 = L.marker(
+                [44.30942600000001, -96.803551],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4ff7aa76c60545d78fbcd47e7304fd0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3856aee487b14c28a506cd7749709662.setIcon(icon_4ff7aa76c60545d78fbcd47e7304fd0f);
+        
+    
+        var popup_bc378905f3ca42059f519a9088bdb1e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f7b97867f614ca5a335f5191eb72aa6 = $(`<div id="html_6f7b97867f614ca5a335f5191eb72aa6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=UNITED+LIVING+COMMUNITY target="_blank">UNITED LIVING COMMUNITY</a></div>`)[0];
+            popup_bc378905f3ca42059f519a9088bdb1e5.setContent(html_6f7b97867f614ca5a335f5191eb72aa6);
+        
+
+        marker_3856aee487b14c28a506cd7749709662.bindPopup(popup_bc378905f3ca42059f519a9088bdb1e5)
+        ;
+
+        
+    
+    
+            var marker_bc6dc4f3811a4dd183b72eadb96cfcea = L.marker(
+                [44.049466, -103.22113],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_06a17700b9eb4b738720e9c8df040a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bc6dc4f3811a4dd183b72eadb96cfcea.setIcon(icon_06a17700b9eb4b738720e9c8df040a86);
+        
+    
+        var popup_3bdf21bfd6ad48a5a2179c0baca21cce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de29eac2b8e9464d83c4ed2af8c9ad31 = $(`<div id="html_de29eac2b8e9464d83c4ed2af8c9ad31" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WESTHILLS+VILLAGE+HEALTH+CARE+FACILITY target="_blank">WESTHILLS VILLAGE HEALTH CARE FACILITY</a></div>`)[0];
+            popup_3bdf21bfd6ad48a5a2179c0baca21cce.setContent(html_de29eac2b8e9464d83c4ed2af8c9ad31);
+        
+
+        marker_bc6dc4f3811a4dd183b72eadb96cfcea.bindPopup(popup_3bdf21bfd6ad48a5a2179c0baca21cce)
+        ;
+
+        
+    
+    
+            var marker_2746929175e74e58b8c6171d27c76100 = L.marker(
+                [42.998506, -97.864079],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_07829e33cee64e788d58b92d69dd3a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2746929175e74e58b8c6171d27c76100.setIcon(icon_07829e33cee64e788d58b92d69dd3a62);
+        
+    
+        var popup_76f5cffe08bb4904be9e9b3187548068 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e64c2bae32d446eb9747f99c5695eb03 = $(`<div id="html_e64c2bae32d446eb9747f99c5695eb03" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+TYNDALL target="_blank">GOOD SAMARITAN SOCIETY TYNDALL</a></div>`)[0];
+            popup_76f5cffe08bb4904be9e9b3187548068.setContent(html_e64c2bae32d446eb9747f99c5695eb03);
+        
+
+        marker_2746929175e74e58b8c6171d27c76100.bindPopup(popup_76f5cffe08bb4904be9e9b3187548068)
+        ;
+
+        
+    
+    
+            var marker_c55ddf8dea484cd8a87a681ca4078a4f = L.marker(
+                [45.47388, -98.493838],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_0a54a3a5397445379a7ed6c0a44ae352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c55ddf8dea484cd8a87a681ca4078a4f.setIcon(icon_0a54a3a5397445379a7ed6c0a44ae352);
+        
+    
+        var popup_2ef745fbe3a14ad9afa722f5a6846fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f661d2fb92c14b27b590f15814a855c4 = $(`<div id="html_f661d2fb92c14b27b590f15814a855c4" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PRAIRIE+HEIGHTS+HEALTHCARE target="_blank">PRAIRIE HEIGHTS HEALTHCARE</a></div>`)[0];
+            popup_2ef745fbe3a14ad9afa722f5a6846fbb.setContent(html_f661d2fb92c14b27b590f15814a855c4);
+        
+
+        marker_c55ddf8dea484cd8a87a681ca4078a4f.bindPopup(popup_2ef745fbe3a14ad9afa722f5a6846fbb)
+        ;
+
+        
+    
+    
+            var marker_e7d4a11557b44ca482c5b61fc88539b7 = L.marker(
+                [45.21188, -96.637314],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_8853a76a77da41dda672f7e5a8cf6305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e7d4a11557b44ca482c5b61fc88539b7.setIcon(icon_8853a76a77da41dda672f7e5a8cf6305);
+        
+    
+        var popup_698059821b584a4e9833440f652aec36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_053ad8d57048471e801c1827e4f84912 = $(`<div id="html_053ad8d57048471e801c1827e4f84912" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+MILBANK target="_blank">AVANTARA MILBANK</a></div>`)[0];
+            popup_698059821b584a4e9833440f652aec36.setContent(html_053ad8d57048471e801c1827e4f84912);
+        
+
+        marker_e7d4a11557b44ca482c5b61fc88539b7.bindPopup(popup_698059821b584a4e9833440f652aec36)
+        ;
+
+        
+    
+    
+            var marker_c91b00a351964368acd0336f30c8c812 = L.marker(
+                [43.995292, -97.113986],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_91eb7ec695854eb1a1afac888a0ae342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c91b00a351964368acd0336f30c8c812.setIcon(icon_91eb7ec695854eb1a1afac888a0ae342);
+        
+    
+        var popup_0dad0302d46a4c0aab21b0f6d1ce87ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4361b608931445ae9d2db83ee93d2385 = $(`<div id="html_4361b608931445ae9d2db83ee93d2385" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHEL+LUTHERAN+HOME target="_blank">BETHEL LUTHERAN HOME</a></div>`)[0];
+            popup_0dad0302d46a4c0aab21b0f6d1ce87ef.setContent(html_4361b608931445ae9d2db83ee93d2385);
+        
+
+        marker_c91b00a351964368acd0336f30c8c812.bindPopup(popup_0dad0302d46a4c0aab21b0f6d1ce87ef)
+        ;
+
+        
+    
+    
+            var marker_bc6f802b20694cb4979e90c3557f52cc = L.marker(
+                [44.494397, -103.85389],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4d35db678a54423bb3d1ca1757c37b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bc6f802b20694cb4979e90c3557f52cc.setIcon(icon_4d35db678a54423bb3d1ca1757c37b15);
+        
+    
+        var popup_e77b1206de584e5db746748156bffb06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae01f97d0db74933968419995c967f80 = $(`<div id="html_ae01f97d0db74933968419995c967f80" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SPEARFISH+CANYON+HEALTHCARE target="_blank">SPEARFISH CANYON HEALTHCARE</a></div>`)[0];
+            popup_e77b1206de584e5db746748156bffb06.setContent(html_ae01f97d0db74933968419995c967f80);
+        
+
+        marker_bc6f802b20694cb4979e90c3557f52cc.bindPopup(popup_e77b1206de584e5db746748156bffb06)
+        ;
+
+        
+    
+    
+            var marker_a48a094645564c6699904bff40456cb9 = L.marker(
+                [45.940506, -102.167924],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_dcf85aff900440ef9f7abb0652cd4093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a48a094645564c6699904bff40456cb9.setIcon(icon_dcf85aff900440ef9f7abb0652cd4093);
+        
+    
+        var popup_b5d3a0ac3e854e25b4950646368b633b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39076f19139a4b3eb750ff6568f1e070 = $(`<div id="html_39076f19139a4b3eb750ff6568f1e070" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=FIVE+COUNTIES+NURSING+HOME target="_blank">FIVE COUNTIES NURSING HOME</a></div>`)[0];
+            popup_b5d3a0ac3e854e25b4950646368b633b.setContent(html_39076f19139a4b3eb750ff6568f1e070);
+        
+
+        marker_a48a094645564c6699904bff40456cb9.bindPopup(popup_b5d3a0ac3e854e25b4950646368b633b)
+        ;
+
+        
+    
+    
+            var marker_2f07a6fc47ab4c3daad0a10bb7726ed9 = L.marker(
+                [44.100765, -103.229062],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_2c608c883732477a97a0325420d6be65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f07a6fc47ab4c3daad0a10bb7726ed9.setIcon(icon_2c608c883732477a97a0325420d6be65);
+        
+    
+        var popup_506d1b711c35447295afacd346d04529 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b421cafcf7734b4ba1d7da12a142e5e2 = $(`<div id="html_b421cafcf7734b4ba1d7da12a142e5e2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+NORTH target="_blank">AVANTARA NORTH</a></div>`)[0];
+            popup_506d1b711c35447295afacd346d04529.setContent(html_b421cafcf7734b4ba1d7da12a142e5e2);
+        
+
+        marker_2f07a6fc47ab4c3daad0a10bb7726ed9.bindPopup(popup_506d1b711c35447295afacd346d04529)
+        ;
+
+        
+    
+    
+            var marker_4dc315cad81c401094f80671a16a31f8 = L.marker(
+                [43.083686, -96.782104],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_e62c2b3d073048baa79564bec0c0af98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4dc315cad81c401094f80671a16a31f8.setIcon(icon_e62c2b3d073048baa79564bec0c0af98);
+        
+    
+        var popup_1ad31a070458473f8b9f74ac6ca51a96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3cbd648da964392a789b395678eab71 = $(`<div id="html_e3cbd648da964392a789b395678eab71" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHESDA+OF+BERESFORD target="_blank">BETHESDA OF BERESFORD</a></div>`)[0];
+            popup_1ad31a070458473f8b9f74ac6ca51a96.setContent(html_e3cbd648da964392a789b395678eab71);
+        
+
+        marker_4dc315cad81c401094f80671a16a31f8.bindPopup(popup_1ad31a070458473f8b9f74ac6ca51a96)
+        ;
+
+        
+    
+    
+            var marker_ee6dd2ee9fa84c629d1fe45201db50e1 = L.marker(
+                [44.368171, -97.132495],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_a97e2523901e4f9eb2765492c651ee84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ee6dd2ee9fa84c629d1fe45201db50e1.setIcon(icon_a97e2523901e4f9eb2765492c651ee84);
+        
+    
+        var popup_429829ecc9564b4e9633b93769aa8a14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d60d6a952040e1896a7ce56401c7f0 = $(`<div id="html_a7d60d6a952040e1896a7ce56401c7f0" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+ARLINGTON target="_blank">AVANTARA ARLINGTON</a></div>`)[0];
+            popup_429829ecc9564b4e9633b93769aa8a14.setContent(html_a7d60d6a952040e1896a7ce56401c7f0);
+        
+
+        marker_ee6dd2ee9fa84c629d1fe45201db50e1.bindPopup(popup_429829ecc9564b4e9633b93769aa8a14)
+        ;
+
+        
+    
+    
+            var marker_25979c356cf2442f9ba5bfc3a9ee8e62 = L.marker(
+                [43.309397, -96.589044],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_c0f8d72b983a4055b63814200f04ed38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_25979c356cf2442f9ba5bfc3a9ee8e62.setIcon(icon_c0f8d72b983a4055b63814200f04ed38);
+        
+    
+        var popup_8930f1b69bb145179971eee45e078164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a96520b7968046a192c8d7a77807e882 = $(`<div id="html_a96520b7968046a192c8d7a77807e882" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+CANTON target="_blank">GOOD SAMARITAN SOCIETY CANTON</a></div>`)[0];
+            popup_8930f1b69bb145179971eee45e078164.setContent(html_a96520b7968046a192c8d7a77807e882);
+        
+
+        marker_25979c356cf2442f9ba5bfc3a9ee8e62.bindPopup(popup_8930f1b69bb145179971eee45e078164)
+        ;
+
+        
+    
+    
+            var marker_105cb03af92c4cd3a0ed7a171196e197 = L.marker(
+                [44.061393, -103.268481],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_daef512d8fcf4a4ca808ce1ca247767b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_105cb03af92c4cd3a0ed7a171196e197.setIcon(icon_daef512d8fcf4a4ca808ce1ca247767b);
+        
+    
+        var popup_e63828b664154779bf39d5f4b8c587b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42b77eafda44427dbf19142a9702144d = $(`<div id="html_42b77eafda44427dbf19142a9702144d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+ARROWHEAD target="_blank">AVANTARA ARROWHEAD</a></div>`)[0];
+            popup_e63828b664154779bf39d5f4b8c587b7.setContent(html_42b77eafda44427dbf19142a9702144d);
+        
+
+        marker_105cb03af92c4cd3a0ed7a171196e197.bindPopup(popup_e63828b664154779bf39d5f4b8c587b7)
+        ;
+
+        
+    
+    
+            var marker_1b6dace001d146aab27ebd401d024256 = L.marker(
+                [44.905888, -97.105237],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_8fdba32301a646cf9da80ea881e3c186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b6dace001d146aab27ebd401d024256.setIcon(icon_8fdba32301a646cf9da80ea881e3c186);
+        
+    
+        var popup_6ba65010840e4a00ac846a01dbd26746 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95d4ac0127c84aa2b2b904c5f0933f5e = $(`<div id="html_95d4ac0127c84aa2b2b904c5f0933f5e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+WATERTOWN target="_blank">AVANTARA WATERTOWN</a></div>`)[0];
+            popup_6ba65010840e4a00ac846a01dbd26746.setContent(html_95d4ac0127c84aa2b2b904c5f0933f5e);
+        
+
+        marker_1b6dace001d146aab27ebd401d024256.bindPopup(popup_6ba65010840e4a00ac846a01dbd26746)
+        ;
+
+        
+    
+    
+            var marker_03c096dfc3ad491eb335d23b836a76f1 = L.marker(
+                [43.509335, -96.790905],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_16de304eaae445a3b239ec2166247dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_03c096dfc3ad491eb335d23b836a76f1.setIcon(icon_16de304eaae445a3b239ec2166247dc9);
+        
+    
+        var popup_b51804fff526433d8d16b0c7a0a588ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43be68d544e8456fa95d0a7c7e608587 = $(`<div id="html_43be68d544e8456fa95d0a7c7e608587" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+SIOUX+FALLS+VILLAGE target="_blank">GOOD SAMARITAN SOCIETY SIOUX FALLS VILLAGE</a></div>`)[0];
+            popup_b51804fff526433d8d16b0c7a0a588ef.setContent(html_43be68d544e8456fa95d0a7c7e608587);
+        
+
+        marker_03c096dfc3ad491eb335d23b836a76f1.bindPopup(popup_b51804fff526433d8d16b0c7a0a588ef)
+        ;
+
+        
+    
+    
+            var marker_3adb013205b04cec99fe1850895bee9f = L.marker(
+                [43.511887, -96.734932],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_76359fd62eb54f3baf25239676c62c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3adb013205b04cec99fe1850895bee9f.setIcon(icon_76359fd62eb54f3baf25239676c62c5d);
+        
+    
+        var popup_f12a989726af455e9ff2791979bc4837 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_447e3e023f2f4eecb90263020b58ab0b = $(`<div id="html_447e3e023f2f4eecb90263020b58ab0b" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+NORTON target="_blank">AVANTARA NORTON</a></div>`)[0];
+            popup_f12a989726af455e9ff2791979bc4837.setContent(html_447e3e023f2f4eecb90263020b58ab0b);
+        
+
+        marker_3adb013205b04cec99fe1850895bee9f.bindPopup(popup_f12a989726af455e9ff2791979bc4837)
+        ;
+
+        
+    
+    
+            var marker_52f08fc474ac45138f5c1d6892f36360 = L.marker(
+                [44.016453, -97.531326],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_0e800919f7914518bab463f302613c12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_52f08fc474ac45138f5c1d6892f36360.setIcon(icon_0e800919f7914518bab463f302613c12);
+        
+    
+        var popup_a1479b36cfdc4fe4aa93a2ed9a0563f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_720436659663450e844afe021e3e644d = $(`<div id="html_720436659663450e844afe021e3e644d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+HOWARD target="_blank">GOOD SAMARITAN SOCIETY HOWARD</a></div>`)[0];
+            popup_a1479b36cfdc4fe4aa93a2ed9a0563f8.setContent(html_720436659663450e844afe021e3e644d);
+        
+
+        marker_52f08fc474ac45138f5c1d6892f36360.bindPopup(popup_a1479b36cfdc4fe4aa93a2ed9a0563f8)
+        ;
+
+        
+    
+    
+            var marker_20073faca9a740019c77b5dba440ba2d = L.marker(
+                [44.583737, -97.212421],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_0c4818b9bbb24456bf691bce33bb21d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_20073faca9a740019c77b5dba440ba2d.setIcon(icon_0c4818b9bbb24456bf691bce33bb21d7);
+        
+    
+        var popup_ebc69e92dca14e659c3b7a0614b74204 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abcaddeeeba7469cb70bf196a43e9c4d = $(`<div id="html_abcaddeeeba7469cb70bf196a43e9c4d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+LAKE+NORDEN target="_blank">AVANTARA LAKE NORDEN</a></div>`)[0];
+            popup_ebc69e92dca14e659c3b7a0614b74204.setContent(html_abcaddeeeba7469cb70bf196a43e9c4d);
+        
+
+        marker_20073faca9a740019c77b5dba440ba2d.bindPopup(popup_ebc69e92dca14e659c3b7a0614b74204)
+        ;
+
+        
+    
+    
+            var marker_ada958ec7623452e924647684989f064 = L.marker(
+                [43.718953, -97.381306],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_159e68a1d3f74bf1a03c4bdd0b939a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ada958ec7623452e924647684989f064.setIcon(icon_159e68a1d3f74bf1a03c4bdd0b939a8c);
+        
+    
+        var popup_e4272e3c841045b8a6b9bed54220793d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d5138cb834f4bfc83f136c44f88914a = $(`<div id="html_3d5138cb834f4bfc83f136c44f88914a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+SALEM target="_blank">AVANTARA SALEM</a></div>`)[0];
+            popup_e4272e3c841045b8a6b9bed54220793d.setContent(html_3d5138cb834f4bfc83f136c44f88914a);
+        
+
+        marker_ada958ec7623452e924647684989f064.bindPopup(popup_e4272e3c841045b8a6b9bed54220793d)
+        ;
+
+        
+    
+    
+            var marker_4c0e306c61c7437eae54bb92c51d05a5 = L.marker(
+                [45.667389, -97.050929],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_ca44c68552f74e7ca680e9015bc49d47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4c0e306c61c7437eae54bb92c51d05a5.setIcon(icon_ca44c68552f74e7ca680e9015bc49d47);
+        
+    
+        var popup_d1fba74d8db64238863a477ddd69243f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27a0b65196804b7c85b5877f8675cfdf = $(`<div id="html_27a0b65196804b7c85b5877f8675cfdf" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=TEKAKWITHA+LIVING+CENTER target="_blank">TEKAKWITHA LIVING CENTER</a></div>`)[0];
+            popup_d1fba74d8db64238863a477ddd69243f.setContent(html_27a0b65196804b7c85b5877f8675cfdf);
+        
+
+        marker_4c0e306c61c7437eae54bb92c51d05a5.bindPopup(popup_d1fba74d8db64238863a477ddd69243f)
+        ;
+
+        
+    
+    
+            var marker_ef60dfaa2b8e40b0921973c02cf267c2 = L.marker(
+                [45.343224, -97.751423],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_f677b7aea21342aa9ae5cbd6d3a434a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ef60dfaa2b8e40b0921973c02cf267c2.setIcon(icon_f677b7aea21342aa9ae5cbd6d3a434a1);
+        
+    
+        var popup_7805ec090ba24a728c0f4497e8ea5e6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fd355086eca48b5b796fa8a59003fcc = $(`<div id="html_2fd355086eca48b5b796fa8a59003fcc" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SUN+DIAL+MANOR target="_blank">SUN DIAL MANOR</a></div>`)[0];
+            popup_7805ec090ba24a728c0f4497e8ea5e6d.setContent(html_2fd355086eca48b5b796fa8a59003fcc);
+        
+
+        marker_ef60dfaa2b8e40b0921973c02cf267c2.bindPopup(popup_7805ec090ba24a728c0f4497e8ea5e6d)
+        ;
+
+        
+    
+    
+            var marker_3cca07e3d02e415a9fae4a5e0bcdb0d8 = L.marker(
+                [43.528156, -96.754248],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_56e051cfe9e94f3dbd801a736b7fb5d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3cca07e3d02e415a9fae4a5e0bcdb0d8.setIcon(icon_56e051cfe9e94f3dbd801a736b7fb5d2);
+        
+    
+        var popup_bf037189109e437f8bbc631385e813a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee5c041f4ecf44bd9802d88e297c5d89 = $(`<div id="html_ee5c041f4ecf44bd9802d88e297c5d89" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHANY+HOME+SIOUX+FALLS target="_blank">BETHANY HOME SIOUX FALLS</a></div>`)[0];
+            popup_bf037189109e437f8bbc631385e813a9.setContent(html_ee5c041f4ecf44bd9802d88e297c5d89);
+        
+
+        marker_3cca07e3d02e415a9fae4a5e0bcdb0d8.bindPopup(popup_bf037189109e437f8bbc631385e813a9)
+        ;
+
+        
+    
+    
+            var marker_16965e2a2b824f248d3a88e498a1406d = L.marker(
+                [43.37093900000001, -99.846702],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_41a13129a35f4bfe88c57aa1fd4b0649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_16965e2a2b824f248d3a88e498a1406d.setIcon(icon_41a13129a35f4bfe88c57aa1fd4b0649);
+        
+    
+        var popup_21793e123bbc4a0ab5fe71c1a11ea501 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5418d56f5fb3453ca0af279731c20afe = $(`<div id="html_5418d56f5fb3453ca0af279731c20afe" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WINNER+REGIONAL+HEALTHCARE+CENTER target="_blank">WINNER REGIONAL HEALTHCARE CENTER</a></div>`)[0];
+            popup_21793e123bbc4a0ab5fe71c1a11ea501.setContent(html_5418d56f5fb3453ca0af279731c20afe);
+        
+
+        marker_16965e2a2b824f248d3a88e498a1406d.bindPopup(popup_21793e123bbc4a0ab5fe71c1a11ea501)
+        ;
+
+        
+    
+    
+            var marker_4c37b31625a2458b8d70e94fc35c6489 = L.marker(
+                [43.556432, -96.732111],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_57d34bd919144da8864572aa9384d402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4c37b31625a2458b8d70e94fc35c6489.setIcon(icon_57d34bd919144da8864572aa9384d402);
+        
+    
+        var popup_32816f7ae94e4d2e9605ce6ce63f9d2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65682750735649458608d4209329955e = $(`<div id="html_65682750735649458608d4209329955e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+SIOUX+FALLS+CENTER target="_blank">GOOD SAMARITAN SOCIETY SIOUX FALLS CENTER</a></div>`)[0];
+            popup_32816f7ae94e4d2e9605ce6ce63f9d2d.setContent(html_65682750735649458608d4209329955e);
+        
+
+        marker_4c37b31625a2458b8d70e94fc35c6489.bindPopup(popup_32816f7ae94e4d2e9605ce6ce63f9d2d)
+        ;
+
+        
+    
+    
+            var marker_8f2706a8ecf644e3bd5edb60f35fa0d8 = L.marker(
+                [44.092668, -102.832083],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_63edd3f10274476a883879966c3ff47f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f2706a8ecf644e3bd5edb60f35fa0d8.setIcon(icon_63edd3f10274476a883879966c3ff47f);
+        
+    
+        var popup_bf76c8af4bae40a38850351ae5cf5763 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5e281f7e62f465a87a1e802d98c8de1 = $(`<div id="html_b5e281f7e62f465a87a1e802d98c8de1" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+NEW+UNDERWOOD target="_blank">GOOD SAMARITAN SOCIETY NEW UNDERWOOD</a></div>`)[0];
+            popup_bf76c8af4bae40a38850351ae5cf5763.setContent(html_b5e281f7e62f465a87a1e802d98c8de1);
+        
+
+        marker_8f2706a8ecf644e3bd5edb60f35fa0d8.bindPopup(popup_bf76c8af4bae40a38850351ae5cf5763)
+        ;
+
+        
+    
+    
+            var marker_238a0e13e0c6438aa35653c0aa710085 = L.marker(
+                [43.11965800000001, -96.956067],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_ddd0beb783974612a32c5311a0caa14c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_238a0e13e0c6438aa35653c0aa710085.setIcon(icon_ddd0beb783974612a32c5311a0caa14c);
+        
+    
+        var popup_3029ab6f09704ea1a475c342f16500e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd5e7219e2254e38972fcab51e61adb4 = $(`<div id="html_dd5e7219e2254e38972fcab51e61adb4" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=CENTERVILLE+CARE+AND+REHAB+CENTER+INC target="_blank">CENTERVILLE CARE AND REHAB CENTER INC</a></div>`)[0];
+            popup_3029ab6f09704ea1a475c342f16500e7.setContent(html_dd5e7219e2254e38972fcab51e61adb4);
+        
+
+        marker_238a0e13e0c6438aa35653c0aa710085.bindPopup(popup_3029ab6f09704ea1a475c342f16500e7)
+        ;
+
+        
+    
+    
+            var marker_b2b764d15e374266acf9043d938aceed = L.marker(
+                [44.578837, -96.903588],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_684acfed00254c0eb7733ad2161b24f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b2b764d15e374266acf9043d938aceed.setIcon(icon_684acfed00254c0eb7733ad2161b24f0);
+        
+    
+        var popup_7e9fe4eef7c841838fe79d5d438fcc91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36b2d609d20d43f5ad76b1fa0db4d45a = $(`<div id="html_36b2d609d20d43f5ad76b1fa0db4d45a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ESTELLINE+NURSING+AND+CARE+CENTER target="_blank">ESTELLINE NURSING AND CARE CENTER</a></div>`)[0];
+            popup_7e9fe4eef7c841838fe79d5d438fcc91.setContent(html_36b2d609d20d43f5ad76b1fa0db4d45a);
+        
+
+        marker_b2b764d15e374266acf9043d938aceed.bindPopup(popup_7e9fe4eef7c841838fe79d5d438fcc91)
+        ;
+
+        
+    
+    
+            var marker_4b4ad9177d8f4e53a4c880cb93b32c91 = L.marker(
+                [44.071806, -103.223847],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_a1a0ecb54fbe4a578ce9f3ce286f1501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b4ad9177d8f4e53a4c880cb93b32c91.setIcon(icon_a1a0ecb54fbe4a578ce9f3ce286f1501);
+        
+    
+        var popup_a39a77af9ece414ca100b8a1cc5dbd28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2b2769fc0f24e65a379ce1553e02513 = $(`<div id="html_e2b2769fc0f24e65a379ce1553e02513" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+SAINT+CLOUD target="_blank">AVANTARA SAINT CLOUD</a></div>`)[0];
+            popup_a39a77af9ece414ca100b8a1cc5dbd28.setContent(html_e2b2769fc0f24e65a379ce1553e02513);
+        
+
+        marker_4b4ad9177d8f4e53a4c880cb93b32c91.bindPopup(popup_a39a77af9ece414ca100b8a1cc5dbd28)
+        ;
+
+        
+    
+    
+            var marker_609f2e33b79a470b8bf851a7b53c5745 = L.marker(
+                [44.07732, -103.252025],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_c355123fd1ce4c7aa9ce3a9a6cd0ecc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_609f2e33b79a470b8bf851a7b53c5745.setIcon(icon_c355123fd1ce4c7aa9ce3a9a6cd0ecc1);
+        
+    
+        var popup_cf16dc2132694032bbaa55e4c781ad1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d9c493e83e64504ace093f425cab1b0 = $(`<div id="html_3d9c493e83e64504ace093f425cab1b0" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+MOUNTAIN+VIEW target="_blank">AVANTARA MOUNTAIN VIEW</a></div>`)[0];
+            popup_cf16dc2132694032bbaa55e4c781ad1b.setContent(html_3d9c493e83e64504ace093f425cab1b0);
+        
+
+        marker_609f2e33b79a470b8bf851a7b53c5745.bindPopup(popup_cf16dc2132694032bbaa55e4c781ad1b)
+        ;
+
+        
+    
+    
+            var marker_0f247316ff7441f6a5844cb25d62f97a = L.marker(
+                [43.154514, -97.713451],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_cc4c43bdf6974d6481e524bbdd3cacb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0f247316ff7441f6a5844cb25d62f97a.setIcon(icon_cc4c43bdf6974d6481e524bbdd3cacb8);
+        
+    
+        var popup_0c5f5ffa3eaa44d586652b5f1264a315 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c4836fc79674e3d875162dc43869d4e = $(`<div id="html_9c4836fc79674e3d875162dc43869d4e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+SCOTLAND target="_blank">GOOD SAMARITAN SOCIETY SCOTLAND</a></div>`)[0];
+            popup_0c5f5ffa3eaa44d586652b5f1264a315.setContent(html_9c4836fc79674e3d875162dc43869d4e);
+        
+
+        marker_0f247316ff7441f6a5844cb25d62f97a.bindPopup(popup_0c5f5ffa3eaa44d586652b5f1264a315)
+        ;
+
+        
+    
+    
+            var marker_3dc81ec6db2e487f8bf17b63af896623 = L.marker(
+                [43.081714, -98.301793],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_7746f7a42e07494d8f71d98e345274e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3dc81ec6db2e487f8bf17b63af896623.setIcon(icon_7746f7a42e07494d8f71d98e345274e1);
+        
+    
+        var popup_61e85c808928421389c5290db161211a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce0989626f51445288af779009b5174b = $(`<div id="html_ce0989626f51445288af779009b5174b" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+WAGNER target="_blank">GOOD SAMARITAN SOCIETY WAGNER</a></div>`)[0];
+            popup_61e85c808928421389c5290db161211a.setContent(html_ce0989626f51445288af779009b5174b);
+        
+
+        marker_3dc81ec6db2e487f8bf17b63af896623.bindPopup(popup_61e85c808928421389c5290db161211a)
+        ;
+
+        
+    
+    
+            var marker_81d318f0e1d74c06ab31ae9f975a6449 = L.marker(
+                [43.597981, -97.298063],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_df9d31b06a5c459483879aaf40ee968b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_81d318f0e1d74c06ab31ae9f975a6449.setIcon(icon_df9d31b06a5c459483879aaf40ee968b);
+        
+    
+        var popup_2a62002f101547a99716cdbe458f37d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2fb8a68c64b4ff6b82180b181235ca0 = $(`<div id="html_a2fb8a68c64b4ff6b82180b181235ca0" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+CANISTOTA target="_blank">GOOD SAMARITAN SOCIETY CANISTOTA</a></div>`)[0];
+            popup_2a62002f101547a99716cdbe458f37d4.setContent(html_a2fb8a68c64b4ff6b82180b181235ca0);
+        
+
+        marker_81d318f0e1d74c06ab31ae9f975a6449.bindPopup(popup_2a62002f101547a99716cdbe458f37d4)
+        ;
+
+        
+    
+    
+            var marker_87022f14cea54c429e0afba9cce2f83c = L.marker(
+                [45.340979000000004, -97.523209],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_467a41df397646d1a22c6c7a04fe302c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87022f14cea54c429e0afba9cce2f83c.setIcon(icon_467a41df397646d1a22c6c7a04fe302c);
+        
+    
+        var popup_b3dc98ca7f184f5c81911343d1cd71a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c174f16ee0948158e43c319d8dc3fb0 = $(`<div id="html_7c174f16ee0948158e43c319d8dc3fb0" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHESDA+HOME target="_blank">BETHESDA HOME</a></div>`)[0];
+            popup_b3dc98ca7f184f5c81911343d1cd71a7.setContent(html_7c174f16ee0948158e43c319d8dc3fb0);
+        
+
+        marker_87022f14cea54c429e0afba9cce2f83c.bindPopup(popup_b3dc98ca7f184f5c81911343d1cd71a7)
+        ;
+
+        
+    
+    
+            var marker_dc2ddccb8c6a4c72874109a01381acea = L.marker(
+                [43.418312, -103.480783],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_77b6420f12ef40b08efe27af6dcd9e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dc2ddccb8c6a4c72874109a01381acea.setIcon(icon_77b6420f12ef40b08efe27af6dcd9e78);
+        
+    
+        var popup_4ea3bff7448e4b4c835459295683584c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3510562bd181416cb60b4e2a8a3864bc = $(`<div id="html_3510562bd181416cb60b4e2a8a3864bc" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SEVEN+SISTERS+LIVING+CENTER target="_blank">SEVEN SISTERS LIVING CENTER</a></div>`)[0];
+            popup_4ea3bff7448e4b4c835459295683584c.setContent(html_3510562bd181416cb60b4e2a8a3864bc);
+        
+
+        marker_dc2ddccb8c6a4c72874109a01381acea.bindPopup(popup_4ea3bff7448e4b4c835459295683584c)
+        ;
+
+        
+    
+    
+            var marker_d6e231d7d1f348ad9c3f229786460843 = L.marker(
+                [45.449884, -99.035507],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_a7199bcd4be641ada8a56c37e8f790d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d6e231d7d1f348ad9c3f229786460843.setIcon(icon_a7199bcd4be641ada8a56c37e8f790d1);
+        
+    
+        var popup_05a91cb8fffe45ac9753c3b142aa79e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48df768d4f3b43bfba0075f5fd92c6b9 = $(`<div id="html_48df768d4f3b43bfba0075f5fd92c6b9" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+IPSWICH target="_blank">AVANTARA IPSWICH</a></div>`)[0];
+            popup_05a91cb8fffe45ac9753c3b142aa79e6.setContent(html_48df768d4f3b43bfba0075f5fd92c6b9);
+        
+
+        marker_d6e231d7d1f348ad9c3f229786460843.bindPopup(popup_05a91cb8fffe45ac9753c3b142aa79e6)
+        ;
+
+        
+    
+    
+            var marker_d2a3455fad0d4112854a915cf975e66f = L.marker(
+                [43.155128, -98.535271],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4e723be058cb4c7f80254dec2c792269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d2a3455fad0d4112854a915cf975e66f.setIcon(icon_4e723be058cb4c7f80254dec2c792269);
+        
+    
+        var popup_ff2dbdf54f69450886a7db82e611b98c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63253df1256d4ceabb6570e029b9ea3d = $(`<div id="html_63253df1256d4ceabb6570e029b9ea3d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LAKE+ANDES+SENIOR+LIVING target="_blank">LAKE ANDES SENIOR LIVING</a></div>`)[0];
+            popup_ff2dbdf54f69450886a7db82e611b98c.setContent(html_63253df1256d4ceabb6570e029b9ea3d);
+        
+
+        marker_d2a3455fad0d4112854a915cf975e66f.bindPopup(popup_ff2dbdf54f69450886a7db82e611b98c)
+        ;
+
+        
+    
+    
+            var marker_e3a06463ce2b4a64bfcb8459beb2fe2d = L.marker(
+                [43.517616, -96.743539],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_dca2ad2b8cad45f8a937144e26f97d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e3a06463ce2b4a64bfcb8459beb2fe2d.setIcon(icon_dca2ad2b8cad45f8a937144e26f97d41);
+        
+    
+        var popup_86120833f6fd436c99f171050e093cb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b435c8d0dfa481f9374659f41442cc1 = $(`<div id="html_1b435c8d0dfa481f9374659f41442cc1" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+LUTHER+MANOR target="_blank">GOOD SAMARITAN SOCIETY LUTHER MANOR</a></div>`)[0];
+            popup_86120833f6fd436c99f171050e093cb9.setContent(html_1b435c8d0dfa481f9374659f41442cc1);
+        
+
+        marker_e3a06463ce2b4a64bfcb8459beb2fe2d.bindPopup(popup_86120833f6fd436c99f171050e093cb9)
+        ;
+
+        
+    
+    
+            var marker_c8d8dba0b5054c91b1c5ca63f3fc7b23 = L.marker(
+                [43.020901, -96.626051],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_7c16f349762a4f54be9e375fa99eaf7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c8d8dba0b5054c91b1c5ca63f3fc7b23.setIcon(icon_7c16f349762a4f54be9e375fa99eaf7a);
+        
+    
+        var popup_d64bbde736074d27a5b5040071109231 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_514ae1b35230427894ed50f9e8650a64 = $(`<div id="html_514ae1b35230427894ed50f9e8650a64" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ALCESTER+CARE+AND+REHAB+CENTER,+INC target="_blank">ALCESTER CARE AND REHAB CENTER, INC</a></div>`)[0];
+            popup_d64bbde736074d27a5b5040071109231.setContent(html_514ae1b35230427894ed50f9e8650a64);
+        
+
+        marker_c8d8dba0b5054c91b1c5ca63f3fc7b23.bindPopup(popup_d64bbde736074d27a5b5040071109231)
+        ;
+
+        
+    
+    
+            var marker_9de4a73ac857457398ad004085021c54 = L.marker(
+                [44.871776, -98.513477],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_d9b67ba246864ce69bb43a5c0edfaef1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9de4a73ac857457398ad004085021c54.setIcon(icon_d9b67ba246864ce69bb43a5c0edfaef1);
+        
+    
+        var popup_9125899c0eb148458470482566e48c30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbb8ae01050b4604852e70d4f5d19040 = $(`<div id="html_dbb8ae01050b4604852e70d4f5d19040" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+REDFIELD target="_blank">AVANTARA REDFIELD</a></div>`)[0];
+            popup_9125899c0eb148458470482566e48c30.setContent(html_dbb8ae01050b4604852e70d4f5d19040);
+        
+
+        marker_9de4a73ac857457398ad004085021c54.bindPopup(popup_9125899c0eb148458470482566e48c30)
+        ;
+
+        
+    
+    
+            var marker_0679d1719086432594961aae3e8b3e33 = L.marker(
+                [45.483898, -98.510492],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_698d09ece8a04b3b871929c7a5c5ffb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0679d1719086432594961aae3e8b3e33.setIcon(icon_698d09ece8a04b3b871929c7a5c5ffb3);
+        
+    
+        var popup_bdf5eabec1384ba7a563b3341bb75c52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_888fcfdf2e4741919721954c6b668235 = $(`<div id="html_888fcfdf2e4741919721954c6b668235" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ABERDEEN+HEALTH+AND+REHAB target="_blank">ABERDEEN HEALTH AND REHAB</a></div>`)[0];
+            popup_bdf5eabec1384ba7a563b3341bb75c52.setContent(html_888fcfdf2e4741919721954c6b668235);
+        
+
+        marker_0679d1719086432594961aae3e8b3e33.bindPopup(popup_bdf5eabec1384ba7a563b3341bb75c52)
+        ;
+
+        
+    
+    
+            var marker_843b53ddf0eb4b2582960b3a9e9b8a0a = L.marker(
+                [42.879869, -97.429457],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_e2eba944ae4146a6bc8bc57779a1c7d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_843b53ddf0eb4b2582960b3a9e9b8a0a.setIcon(icon_e2eba944ae4146a6bc8bc57779a1c7d4);
+        
+    
+        var popup_3d78c0d41578401da5ad7463174c7a6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad2faec85eba4c9db2521db1318e7aed = $(`<div id="html_ad2faec85eba4c9db2521db1318e7aed" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+SISTER+JAMES+CARE+CENTER target="_blank">AVERA SISTER JAMES CARE CENTER</a></div>`)[0];
+            popup_3d78c0d41578401da5ad7463174c7a6d.setContent(html_ad2faec85eba4c9db2521db1318e7aed);
+        
+
+        marker_843b53ddf0eb4b2582960b3a9e9b8a0a.bindPopup(popup_3d78c0d41578401da5ad7463174c7a6d)
+        ;
+
+        
+    
+    
+            var marker_cff84b70d97b40b69ca9ba2feb694e14 = L.marker(
+                [45.475886, -98.483572],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4ed55c8ea15d48a5b05ef4b56def0936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cff84b70d97b40b69ca9ba2feb694e14.setIcon(icon_4ed55c8ea15d48a5b05ef4b56def0936);
+        
+    
+        var popup_4ced3a95bfd143b285d11b3b8fee58c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05907e7f528d45988b86a84d2e073280 = $(`<div id="html_05907e7f528d45988b86a84d2e073280" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+MOTHER+JOSEPH+MANOR+RETIREMENT+COMMUNITY target="_blank">AVERA MOTHER JOSEPH MANOR RETIREMENT COMMUNITY</a></div>`)[0];
+            popup_4ced3a95bfd143b285d11b3b8fee58c8.setContent(html_05907e7f528d45988b86a84d2e073280);
+        
+
+        marker_cff84b70d97b40b69ca9ba2feb694e14.bindPopup(popup_4ced3a95bfd143b285d11b3b8fee58c8)
+        ;
+
+        
+    
+    
+            var marker_dfe303a3ebae41a2bee4d5b2493896d7 = L.marker(
+                [44.651157, -103.841962],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4e2ffb37ead54f999d49dbdad7057b7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dfe303a3ebae41a2bee4d5b2493896d7.setIcon(icon_4e2ffb37ead54f999d49dbdad7057b7b);
+        
+    
+        var popup_84070af49d0a4a0db0bfd4b7324485ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e98bd032fcfc46cb94d122394558d519 = $(`<div id="html_e98bd032fcfc46cb94d122394558d519" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ROLLING+HILLS+HEALTHCARE target="_blank">ROLLING HILLS HEALTHCARE</a></div>`)[0];
+            popup_84070af49d0a4a0db0bfd4b7324485ff.setContent(html_e98bd032fcfc46cb94d122394558d519);
+        
+
+        marker_dfe303a3ebae41a2bee4d5b2493896d7.bindPopup(popup_84070af49d0a4a0db0bfd4b7324485ff)
+        ;
+
+        
+    
+    
+            var marker_0b73e23f77a8432eada4606d1f866f57 = L.marker(
+                [44.358861, -100.340168],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_13322c3e45eb494aad3a2bf9df91df3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b73e23f77a8432eada4606d1f866f57.setIcon(icon_13322c3e45eb494aad3a2bf9df91df3f);
+        
+    
+        var popup_6f94e4fe0aaf49d282c8bbda2a56c427 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57c3010dee374cb3b4ae7c34018e8884 = $(`<div id="html_57c3010dee374cb3b4ae7c34018e8884" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+PIERRE target="_blank">AVANTARA PIERRE</a></div>`)[0];
+            popup_6f94e4fe0aaf49d282c8bbda2a56c427.setContent(html_57c3010dee374cb3b4ae7c34018e8884);
+        
+
+        marker_0b73e23f77a8432eada4606d1f866f57.bindPopup(popup_6f94e4fe0aaf49d282c8bbda2a56c427)
+        ;
+
+        
+    
+    
+            var marker_76631ceca74b4442907514366256ce77 = L.marker(
+                [44.049496, -96.586104],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_5c5df718591746208775e8e30389f572 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76631ceca74b4442907514366256ce77.setIcon(icon_5c5df718591746208775e8e30389f572);
+        
+    
+        var popup_555c1222bfbb4115a8fadf0e21ff5ad8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc48a68fc6c5490585669cf64661be47 = $(`<div id="html_fc48a68fc6c5490585669cf64661be47" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=RIVERVIEW+HEALTHCARE+CENTER target="_blank">RIVERVIEW HEALTHCARE CENTER</a></div>`)[0];
+            popup_555c1222bfbb4115a8fadf0e21ff5ad8.setContent(html_fc48a68fc6c5490585669cf64661be47);
+        
+
+        marker_76631ceca74b4442907514366256ce77.bindPopup(popup_555c1222bfbb4115a8fadf0e21ff5ad8)
+        ;
+
+        
+    
+    
+            var marker_dc1cbbfbae644a12bdfa6e2c0565af01 = L.marker(
+                [43.311791, -98.344907],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_1176db9b2b254f3c9dd6e3edcf1255fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dc1cbbfbae644a12bdfa6e2c0565af01.setIcon(icon_1176db9b2b254f3c9dd6e3edcf1255fa);
+        
+    
+        var popup_7842fb0bb3d14f9291b092b7ff97f302 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6c2e438e9ee4800af4b81d73f7acbec = $(`<div id="html_b6c2e438e9ee4800af4b81d73f7acbec" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+ARMOUR target="_blank">AVANTARA ARMOUR</a></div>`)[0];
+            popup_7842fb0bb3d14f9291b092b7ff97f302.setContent(html_b6c2e438e9ee4800af4b81d73f7acbec);
+        
+
+        marker_dc1cbbfbae644a12bdfa6e2c0565af01.bindPopup(popup_7842fb0bb3d14f9291b092b7ff97f302)
+        ;
+
+        
+    
+    
+            var marker_76c1cdee27914d58bfdbf545a195cbaa = L.marker(
+                [43.349611, -96.886826],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_62894cd32d6d4e3da7777f7f78d8df2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76c1cdee27914d58bfdbf545a195cbaa.setIcon(icon_62894cd32d6d4e3da7777f7f78d8df2d);
+        
+    
+        var popup_60c6f27122bf47f3ab4d54ebd34bd429 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a5f5bf46a3a41e8b1d3054f50b68ad1 = $(`<div id="html_6a5f5bf46a3a41e8b1d3054f50b68ad1" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+LENNOX target="_blank">GOOD SAMARITAN SOCIETY LENNOX</a></div>`)[0];
+            popup_60c6f27122bf47f3ab4d54ebd34bd429.setContent(html_6a5f5bf46a3a41e8b1d3054f50b68ad1);
+        
+
+        marker_76c1cdee27914d58bfdbf545a195cbaa.bindPopup(popup_60c6f27122bf47f3ab4d54ebd34bd429)
+        ;
+
+        
+    
+    
+            var marker_2f4eb6cca65c4c61b9d240a47848da07 = L.marker(
+                [43.503047, -96.684464],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_50cebda9d68944c79c6556993d6ac303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f4eb6cca65c4c61b9d240a47848da07.setIcon(icon_50cebda9d68944c79c6556993d6ac303);
+        
+    
+        var popup_ee83bcbec019428e9a27081498d549cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d46a786d98e4c54b354a79a1ec263f9 = $(`<div id="html_3d46a786d98e4c54b354a79a1ec263f9" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+PRINCE+OF+PEACE target="_blank">AVERA PRINCE OF PEACE</a></div>`)[0];
+            popup_ee83bcbec019428e9a27081498d549cd.setContent(html_3d46a786d98e4c54b354a79a1ec263f9);
+        
+
+        marker_2f4eb6cca65c4c61b9d240a47848da07.bindPopup(popup_ee83bcbec019428e9a27081498d549cd)
+        ;
+
+        
+    
+    
+            var marker_a8bf10de5a394e75b936ad0d9b11723b = L.marker(
+                [45.767196, -99.614475],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_a56aa717f6c74cd1b8bfdb883d2c8ad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a8bf10de5a394e75b936ad0d9b11723b.setIcon(icon_a56aa717f6c74cd1b8bfdb883d2c8ad7);
+        
+    
+        var popup_f3c0a7f316c44d0783925dcb36b498db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70a7a6f5ed4341348ae5d5efac63358d = $(`<div id="html_70a7a6f5ed4341348ae5d5efac63358d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+EUREKA+HEALTH+CARE+CENTER target="_blank">AVERA EUREKA HEALTH CARE CENTER</a></div>`)[0];
+            popup_f3c0a7f316c44d0783925dcb36b498db.setContent(html_70a7a6f5ed4341348ae5d5efac63358d);
+        
+
+        marker_a8bf10de5a394e75b936ad0d9b11723b.bindPopup(popup_f3c0a7f316c44d0783925dcb36b498db)
+        ;
+
+        
+    
+    
+            var marker_76627e203be641df9d2ac4d2032d003f = L.marker(
+                [44.306074, -96.763481],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_04177c4cf7c847c58fa600465a6dc4d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76627e203be641df9d2ac4d2032d003f.setIcon(icon_04177c4cf7c847c58fa600465a6dc4d0);
+        
+    
+        var popup_8490f7a4d34a4c8db86433a7361a4d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36e7705fd5284683873a2790a9a2349e = $(`<div id="html_36e7705fd5284683873a2790a9a2349e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=THE+NEIGHBORHOODS+AT+BROOKVIEW target="_blank">THE NEIGHBORHOODS AT BROOKVIEW</a></div>`)[0];
+            popup_8490f7a4d34a4c8db86433a7361a4d14.setContent(html_36e7705fd5284683873a2790a9a2349e);
+        
+
+        marker_76627e203be641df9d2ac4d2032d003f.bindPopup(popup_8490f7a4d34a4c8db86433a7361a4d14)
+        ;
+
+        
+    
+    
+            var marker_00d7e57bd51e42cf8595e2ce2dd198ac = L.marker(
+                [45.450525, -98.466154],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_ca61baeb80324ede9de770937f21eed5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_00d7e57bd51e42cf8595e2ce2dd198ac.setIcon(icon_ca61baeb80324ede9de770937f21eed5);
+        
+    
+        var popup_118ff25df8784c7e9d1ab80b9b76e544 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5156d882d0b4432c901bda600a8e3e3e = $(`<div id="html_5156d882d0b4432c901bda600a8e3e3e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHESDA+HOME+OF+ABERDEEN target="_blank">BETHESDA HOME OF ABERDEEN</a></div>`)[0];
+            popup_118ff25df8784c7e9d1ab80b9b76e544.setContent(html_5156d882d0b4432c901bda600a8e3e3e);
+        
+
+        marker_00d7e57bd51e42cf8595e2ce2dd198ac.bindPopup(popup_118ff25df8784c7e9d1ab80b9b76e544)
+        ;
+
+        
+    
+    
+            var marker_bb37c7a2e83f4f41a00a8e53d563d05f = L.marker(
+                [44.076205, -103.252018],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_ba7796eb689b4084a56f191630e49cf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bb37c7a2e83f4f41a00a8e53d563d05f.setIcon(icon_ba7796eb689b4084a56f191630e49cf8);
+        
+    
+        var popup_64a9b6575698423a9c87796a9e8717db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ef42745e47b49c0af8444c0c2fd1a9e = $(`<div id="html_1ef42745e47b49c0af8444c0c2fd1a9e" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=CLARKSON+HEALTH+CARE target="_blank">CLARKSON HEALTH CARE</a></div>`)[0];
+            popup_64a9b6575698423a9c87796a9e8717db.setContent(html_1ef42745e47b49c0af8444c0c2fd1a9e);
+        
+
+        marker_bb37c7a2e83f4f41a00a8e53d563d05f.bindPopup(popup_64a9b6575698423a9c87796a9e8717db)
+        ;
+
+        
+    
+    
+            var marker_f1c36c94252241b0ae4194193707bbad = L.marker(
+                [44.361103, -100.346651],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4744e11dfe3544899304a2a8a4250743 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1c36c94252241b0ae4194193707bbad.setIcon(icon_4744e11dfe3544899304a2a8a4250743);
+        
+    
+        var popup_bee18875c6af455ba10367199b0f9c2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd2c536d05f44a16833044a7d96856ab = $(`<div id="html_bd2c536d05f44a16833044a7d96856ab" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+MARYHOUSE+LONG+TERM+CARE target="_blank">AVERA MARYHOUSE LONG TERM CARE</a></div>`)[0];
+            popup_bee18875c6af455ba10367199b0f9c2b.setContent(html_bd2c536d05f44a16833044a7d96856ab);
+        
+
+        marker_f1c36c94252241b0ae4194193707bbad.bindPopup(popup_bee18875c6af455ba10367199b0f9c2b)
+        ;
+
+        
+    
+    
+            var marker_ac3e4212153e4f919a9820c5f4217172 = L.marker(
+                [42.682675, -96.689332],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_173b4bb1f3bc4a97aae21ddaabc40c14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ac3e4212153e4f919a9820c5f4217172.setIcon(icon_173b4bb1f3bc4a97aae21ddaabc40c14);
+        
+    
+        var popup_6efc1db26daa45f39da4a60b49896150 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0287ba42d49b4bfd80fdb59de052cdcc = $(`<div id="html_0287ba42d49b4bfd80fdb59de052cdcc" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PRAIRIE+ESTATES+CARE+CENTER target="_blank">PRAIRIE ESTATES CARE CENTER</a></div>`)[0];
+            popup_6efc1db26daa45f39da4a60b49896150.setContent(html_0287ba42d49b4bfd80fdb59de052cdcc);
+        
+
+        marker_ac3e4212153e4f919a9820c5f4217172.bindPopup(popup_6efc1db26daa45f39da4a60b49896150)
+        ;
+
+        
+    
+    
+            var marker_07c5650c4f6c474c9873c59f35d7c52d = L.marker(
+                [43.426582, -97.254083],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_02cb81c1db8f4303a47823b89e6fa134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_07c5650c4f6c474c9873c59f35d7c52d.setIcon(icon_02cb81c1db8f4303a47823b89e6fa134);
+        
+    
+        var popup_d69df2971e7a4f458b621607b915f126 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a28d2fca78b549e2877e05602873795c = $(`<div id="html_a28d2fca78b549e2877e05602873795c" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=TIESZEN+MEMORIAL+HOME target="_blank">TIESZEN MEMORIAL HOME</a></div>`)[0];
+            popup_d69df2971e7a4f458b621607b915f126.setContent(html_a28d2fca78b549e2877e05602873795c);
+        
+
+        marker_07c5650c4f6c474c9873c59f35d7c52d.bindPopup(popup_d69df2971e7a4f458b621607b915f126)
+        ;
+
+        
+    
+    
+            var marker_3478e51f7a5e4a2ebfa1bf91bda8984f = L.marker(
+                [43.706096, -98.04693],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_bc08635902b14cdaa7e790762d365f51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3478e51f7a5e4a2ebfa1bf91bda8984f.setIcon(icon_bc08635902b14cdaa7e790762d365f51);
+        
+    
+        var popup_cadf6dd0b23e412db1366b3fb4d2a202 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a193ccdce9e48a888c6c4055fcbb202 = $(`<div id="html_3a193ccdce9e48a888c6c4055fcbb202" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+BRADY+HEALTH+AND+REHAB target="_blank">AVERA BRADY HEALTH AND REHAB</a></div>`)[0];
+            popup_cadf6dd0b23e412db1366b3fb4d2a202.setContent(html_3a193ccdce9e48a888c6c4055fcbb202);
+        
+
+        marker_3478e51f7a5e4a2ebfa1bf91bda8984f.bindPopup(popup_cadf6dd0b23e412db1366b3fb4d2a202)
+        ;
+
+        
+    
+    
+            var marker_64e40b4d37bf4915bbd3bb6803630305 = L.marker(
+                [43.772506, -103.591995],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_e71632d7fc7345f6b8139010ce3019e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_64e40b4d37bf4915bbd3bb6803630305.setIcon(icon_e71632d7fc7345f6b8139010ce3019e1);
+        
+    
+        var popup_db0e48fb47444bcc97a06402ab3e1cbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4088f09bb8c476eb013ee773a34b6d7 = $(`<div id="html_d4088f09bb8c476eb013ee773a34b6d7" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MONUMENT+HEALTH+CUSTER+CARE+CENTER target="_blank">MONUMENT HEALTH CUSTER CARE CENTER</a></div>`)[0];
+            popup_db0e48fb47444bcc97a06402ab3e1cbd.setContent(html_d4088f09bb8c476eb013ee773a34b6d7);
+        
+
+        marker_64e40b4d37bf4915bbd3bb6803630305.bindPopup(popup_db0e48fb47444bcc97a06402ab3e1cbd)
+        ;
+
+        
+    
+    
+            var marker_c40dc0a015a849008f23b970efb0b819 = L.marker(
+                [43.427399, -98.406766],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_21a3658a0b3c47fdb1872708f9e48e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c40dc0a015a849008f23b970efb0b819.setIcon(icon_21a3658a0b3c47fdb1872708f9e48e29);
+        
+    
+        var popup_9095e4c2ce8c4bc99cf9ed3d4cb2dea3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93ff9a6afb3f4ecca86fea6cd17b4396 = $(`<div id="html_93ff9a6afb3f4ecca86fea6cd17b4396" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+CORSICA target="_blank">GOOD SAMARITAN SOCIETY CORSICA</a></div>`)[0];
+            popup_9095e4c2ce8c4bc99cf9ed3d4cb2dea3.setContent(html_93ff9a6afb3f4ecca86fea6cd17b4396);
+        
+
+        marker_c40dc0a015a849008f23b970efb0b819.bindPopup(popup_9095e4c2ce8c4bc99cf9ed3d4cb2dea3)
+        ;
+
+        
+    
+    
+            var marker_8248f070c6ac4cdabdec66d68b51620c = L.marker(
+                [45.791322, -97.76005300000001],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_bb53860cd4be402dae965d862ccfed22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8248f070c6ac4cdabdec66d68b51620c.setIcon(icon_bb53860cd4be402dae965d862ccfed22);
+        
+    
+        var popup_8be2a216cf8441468f8ada16d9012f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc8f83121ba4a60bda122e06c951608 = $(`<div id="html_cfc8f83121ba4a60bda122e06c951608" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WHEATCREST+HILLS+HEALTHCARE+CENTER target="_blank">WHEATCREST HILLS HEALTHCARE CENTER</a></div>`)[0];
+            popup_8be2a216cf8441468f8ada16d9012f1b.setContent(html_cfc8f83121ba4a60bda122e06c951608);
+        
+
+        marker_8248f070c6ac4cdabdec66d68b51620c.bindPopup(popup_8be2a216cf8441468f8ada16d9012f1b)
+        ;
+
+        
+    
+    
+            var marker_b2be6545e1384148b4451acbae6b6fa0 = L.marker(
+                [44.35069, -98.230678],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_755386a91e1d4f6c80d22dfbd837bee8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b2be6545e1384148b4451acbae6b6fa0.setIcon(icon_755386a91e1d4f6c80d22dfbd837bee8);
+        
+    
+        var popup_97582199a06342a58cf716bdd5702090 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bf77500bd884d139562845faf82ea86 = $(`<div id="html_9bf77500bd884d139562845faf82ea86" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVANTARA+HURON target="_blank">AVANTARA HURON</a></div>`)[0];
+            popup_97582199a06342a58cf716bdd5702090.setContent(html_9bf77500bd884d139562845faf82ea86);
+        
+
+        marker_b2be6545e1384148b4451acbae6b6fa0.bindPopup(popup_97582199a06342a58cf716bdd5702090)
+        ;
+
+        
+    
+    
+            var marker_a22d9c62634f4b6c8257e26d5d951438 = L.marker(
+                [44.38374, -97.549725],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_e72bd955569545579346083b9dd73c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a22d9c62634f4b6c8257e26d5d951438.setIcon(icon_e72bd955569545579346083b9dd73c08);
+        
+    
+        var popup_03dc992c68d140e697337dda21efc21a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa1fb6e5080d487b852cf0ea86c9b216 = $(`<div id="html_fa1fb6e5080d487b852cf0ea86c9b216" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+DE+SMET target="_blank">GOOD SAMARITAN SOCIETY DE SMET</a></div>`)[0];
+            popup_03dc992c68d140e697337dda21efc21a.setContent(html_fa1fb6e5080d487b852cf0ea86c9b216);
+        
+
+        marker_a22d9c62634f4b6c8257e26d5d951438.bindPopup(popup_03dc992c68d140e697337dda21efc21a)
+        ;
+
+        
+    
+    
+            var marker_e35efa5a7b154c2c80e8b03b43e51c83 = L.marker(
+                [44.402787, -103.509122],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_f854336dab824e8cb8319a0c589e4fac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e35efa5a7b154c2c80e8b03b43e51c83.setIcon(icon_f854336dab824e8cb8319a0c589e4fac);
+        
+    
+        var popup_9cfe7c18b0be458da150a466960effbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4114c45cb77548fbae583650e4053b95 = $(`<div id="html_4114c45cb77548fbae583650e4053b95" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MONUMENT+HEALTH+STURGIS+CARE+CENTER target="_blank">MONUMENT HEALTH STURGIS CARE CENTER</a></div>`)[0];
+            popup_9cfe7c18b0be458da150a466960effbb.setContent(html_4114c45cb77548fbae583650e4053b95);
+        
+
+        marker_e35efa5a7b154c2c80e8b03b43e51c83.bindPopup(popup_9cfe7c18b0be458da150a466960effbb)
+        ;
+
+        
+    
+    
+            var marker_0c044d6a111545a2ae2c39b0ba6bb52d = L.marker(
+                [45.448546, -99.660939],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_9ce3473c1616497a9d92160200cd1de5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0c044d6a111545a2ae2c39b0ba6bb52d.setIcon(icon_9ce3473c1616497a9d92160200cd1de5);
+        
+    
+        var popup_be504e2814a7452d9856980b015fcacb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b0ed7d5bff54883ac5d79c5e90bca37 = $(`<div id="html_9b0ed7d5bff54883ac5d79c5e90bca37" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BOWDLE+NURSING+HOME target="_blank">BOWDLE NURSING HOME</a></div>`)[0];
+            popup_be504e2814a7452d9856980b015fcacb.setContent(html_9b0ed7d5bff54883ac5d79c5e90bca37);
+        
+
+        marker_0c044d6a111545a2ae2c39b0ba6bb52d.bindPopup(popup_be504e2814a7452d9856980b015fcacb)
+        ;
+
+        
+    
+    
+            var marker_c2a78f3777f543c4984d1999b31dde11 = L.marker(
+                [43.560053, -96.745371],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_8d153fdefef54bd9af1522944f0615bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c2a78f3777f543c4984d1999b31dde11.setIcon(icon_8d153fdefef54bd9af1522944f0615bf);
+        
+    
+        var popup_a5053ad017644027ab64bf0f3991fd18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9b916841a7b4e1c95a5fc5c16407de9 = $(`<div id="html_b9b916841a7b4e1c95a5fc5c16407de9" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=DOW+RUMMEL+VILLAGE target="_blank">DOW RUMMEL VILLAGE</a></div>`)[0];
+            popup_a5053ad017644027ab64bf0f3991fd18.setContent(html_b9b916841a7b4e1c95a5fc5c16407de9);
+        
+
+        marker_c2a78f3777f543c4984d1999b31dde11.bindPopup(popup_a5053ad017644027ab64bf0f3991fd18)
+        ;
+
+        
+    
+    
+            var marker_6243d81c28f64a2e887a7281e3cacc81 = L.marker(
+                [44.03944, -101.672133],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_b44f897a58a84136a23c5f2530972d3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6243d81c28f64a2e887a7281e3cacc81.setIcon(icon_b44f897a58a84136a23c5f2530972d3b);
+        
+    
+        var popup_dd1af68ca0bf4248bdc9b65ca93f4d47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f81333b3d1124b6f864fe2d76c8e963d = $(`<div id="html_f81333b3d1124b6f864fe2d76c8e963d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PHILIP+NURSING+HOME target="_blank">PHILIP NURSING HOME</a></div>`)[0];
+            popup_dd1af68ca0bf4248bdc9b65ca93f4d47.setContent(html_f81333b3d1124b6f864fe2d76c8e963d);
+        
+
+        marker_6243d81c28f64a2e887a7281e3cacc81.bindPopup(popup_dd1af68ca0bf4248bdc9b65ca93f4d47)
+        ;
+
+        
+    
+    
+            var marker_949237ed651a441798229655eab2817f = L.marker(
+                [44.104617, -103.25230400000001],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_08a181dc2c1b4440b2b8f5149adb3c3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_949237ed651a441798229655eab2817f.setIcon(icon_08a181dc2c1b4440b2b8f5149adb3c3b);
+        
+    
+        var popup_310afbf429824424bf73e9dbae40bcd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f26a51ed619047f788e7debb44f363af = $(`<div id="html_f26a51ed619047f788e7debb44f363af" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=FOUNTAIN+SPRINGS+HEALTHCARE+CENTER target="_blank">FOUNTAIN SPRINGS HEALTHCARE CENTER</a></div>`)[0];
+            popup_310afbf429824424bf73e9dbae40bcd0.setContent(html_f26a51ed619047f788e7debb44f363af);
+        
+
+        marker_949237ed651a441798229655eab2817f.bindPopup(popup_310afbf429824424bf73e9dbae40bcd0)
+        ;
+
+        
+    
+    
+            var marker_1625789f506b4b8b97fd400a4dea3115 = L.marker(
+                [43.398945, -97.990061],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_16b746cf5bcf463bb1a5e769a03730f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1625789f506b4b8b97fd400a4dea3115.setIcon(icon_16b746cf5bcf463bb1a5e769a03730f7);
+        
+    
+        var popup_d211b280df5c4150a8254a4a42a6a3e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c89cebf957e4439da40a8d4a348339f9 = $(`<div id="html_c89cebf957e4439da40a8d4a348339f9" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+BORMANN+MANOR target="_blank">AVERA BORMANN MANOR</a></div>`)[0];
+            popup_d211b280df5c4150a8254a4a42a6a3e6.setContent(html_c89cebf957e4439da40a8d4a348339f9);
+        
+
+        marker_1625789f506b4b8b97fd400a4dea3115.bindPopup(popup_d211b280df5c4150a8254a4a42a6a3e6)
+        ;
+
+        
+    
+    
+            var marker_16ba4e3210e24dcaa14c42f22fe92be5 = L.marker(
+                [43.169171, -101.731784],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_208f076e02134e72a3bb8543c53c8f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_16ba4e3210e24dcaa14c42f22fe92be5.setIcon(icon_208f076e02134e72a3bb8543c53c8f4a);
+        
+    
+        var popup_57008f4b8a2a490285a9ee6fffe55c66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a3301f20fb74544bea485d50cdcb633 = $(`<div id="html_1a3301f20fb74544bea485d50cdcb633" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BENNETT+COUNTY+HOSPITAL+AND+NURSING+HOME target="_blank">BENNETT COUNTY HOSPITAL AND NURSING HOME</a></div>`)[0];
+            popup_57008f4b8a2a490285a9ee6fffe55c66.setContent(html_1a3301f20fb74544bea485d50cdcb633);
+        
+
+        marker_16ba4e3210e24dcaa14c42f22fe92be5.bindPopup(popup_57008f4b8a2a490285a9ee6fffe55c66)
+        ;
+
+        
+    
+    
+            var marker_b7a5b92a68c1449fbcd323f8c78d1153 = L.marker(
+                [44.080394, -98.56362500000002],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_ea559739f6ed4862bab7e5dc49d208c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b7a5b92a68c1449fbcd323f8c78d1153.setIcon(icon_ea559739f6ed4862bab7e5dc49d208c5);
+        
+    
+        var popup_5e6aa380d32e48c8a49a38c5ae9404d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_146d923eb789469ba214b5e398cd60e7 = $(`<div id="html_146d923eb789469ba214b5e398cd60e7" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WESKOTA+MANOR+INC target="_blank">WESKOTA MANOR INC</a></div>`)[0];
+            popup_5e6aa380d32e48c8a49a38c5ae9404d2.setContent(html_146d923eb789469ba214b5e398cd60e7);
+        
+
+        marker_b7a5b92a68c1449fbcd323f8c78d1153.bindPopup(popup_5e6aa380d32e48c8a49a38c5ae9404d2)
+        ;
+
+        
+    
+    
+            var marker_1b6139d480294875836f04ee9af7bf9c = L.marker(
+                [45.41178, -96.860675],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_8f45c286bb8a4f13b83782647f695fc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b6139d480294875836f04ee9af7bf9c.setIcon(icon_8f45c286bb8a4f13b83782647f695fc5);
+        
+    
+        var popup_5093a4254a3e4673957d606d38d5f1d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caa16dccc491420ca5776e35a6d1fac6 = $(`<div id="html_caa16dccc491420ca5776e35a6d1fac6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WILMOT+CARE+CENTER+INC target="_blank">WILMOT CARE CENTER INC</a></div>`)[0];
+            popup_5093a4254a3e4673957d606d38d5f1d1.setContent(html_caa16dccc491420ca5776e35a6d1fac6);
+        
+
+        marker_1b6139d480294875836f04ee9af7bf9c.bindPopup(popup_5093a4254a3e4673957d606d38d5f1d1)
+        ;
+
+        
+    
+    
+            var marker_3fa1fe8d8a964984986f533e5b1d022c = L.marker(
+                [43.78511, -99.326134],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_0cb88387c3be43c282f13dc278623ea6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3fa1fe8d8a964984986f533e5b1d022c.setIcon(icon_0cb88387c3be43c282f13dc278623ea6);
+        
+    
+        var popup_38191761e17f45e080bb1b93c88d16d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb11c4d23b5241a291674bfee4029397 = $(`<div id="html_eb11c4d23b5241a291674bfee4029397" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SANFORD+CHAMBERLAIN+CARE+CENTER target="_blank">SANFORD CHAMBERLAIN CARE CENTER</a></div>`)[0];
+            popup_38191761e17f45e080bb1b93c88d16d2.setContent(html_eb11c4d23b5241a291674bfee4029397);
+        
+
+        marker_3fa1fe8d8a964984986f533e5b1d022c.bindPopup(popup_38191761e17f45e080bb1b93c88d16d2)
+        ;
+
+        
+    
+    
+            var marker_27364e24427d49ef84fb21e13f3eae41 = L.marker(
+                [43.34754300000001, -97.431046],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_d1843771e24f46c0845616e16cd47262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_27364e24427d49ef84fb21e13f3eae41.setIcon(icon_d1843771e24f46c0845616e16cd47262);
+        
+    
+        var popup_3bed09e75c854064bf9af6a99bf77aca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cf9e8759d734c2bab413af3b845b7ce = $(`<div id="html_3cf9e8759d734c2bab413af3b845b7ce" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=OAKVIEW+TERRACE target="_blank">OAKVIEW TERRACE</a></div>`)[0];
+            popup_3bed09e75c854064bf9af6a99bf77aca.setContent(html_3cf9e8759d734c2bab413af3b845b7ce);
+        
+
+        marker_27364e24427d49ef84fb21e13f3eae41.bindPopup(popup_3bed09e75c854064bf9af6a99bf77aca)
+        ;
+
+        
+    
+    
+            var marker_415668ce86054490b71fad2f89738a7d = L.marker(
+                [43.835803, -101.512729],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_6ebf810c4c7e49358949cb703ea55e48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_415668ce86054490b71fad2f89738a7d.setIcon(icon_6ebf810c4c7e49358949cb703ea55e48);
+        
+    
+        var popup_479ec931237e4fd59266a7341b7bdf41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9f60673f5d947cdbca04038022ee7ce = $(`<div id="html_c9f60673f5d947cdbca04038022ee7ce" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KADOKA+NURSING+HOME target="_blank">KADOKA NURSING HOME</a></div>`)[0];
+            popup_479ec931237e4fd59266a7341b7bdf41.setContent(html_c9f60673f5d947cdbca04038022ee7ce);
+        
+
+        marker_415668ce86054490b71fad2f89738a7d.bindPopup(popup_479ec931237e4fd59266a7341b7bdf41)
+        ;
+
+        
+    
+    
+            var marker_7f2a776654994f1dbe5efddc6102a9d7 = L.marker(
+                [43.724913, -98.711179],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_e700a21dce3f4f53bde34b7a0e688326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7f2a776654994f1dbe5efddc6102a9d7.setIcon(icon_e700a21dce3f4f53bde34b7a0e688326);
+        
+    
+        var popup_81078536c4194eecad7bf8e5e9e4893c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_881eec7622b24fa1a88d8f697d331456 = $(`<div id="html_881eec7622b24fa1a88d8f697d331456" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AURORA+BRULE+NURSING+HOME+INC target="_blank">AURORA BRULE NURSING HOME INC</a></div>`)[0];
+            popup_81078536c4194eecad7bf8e5e9e4893c.setContent(html_881eec7622b24fa1a88d8f697d331456);
+        
+
+        marker_7f2a776654994f1dbe5efddc6102a9d7.bindPopup(popup_81078536c4194eecad7bf8e5e9e4893c)
+        ;
+
+        
+    
+    
+            var marker_5abaad07cd3e4f7390ea715e891b3c80 = L.marker(
+                [45.221975, -96.627838],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4f59f5e0227d4f388de2406ca959b07a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5abaad07cd3e4f7390ea715e891b3c80.setIcon(icon_4f59f5e0227d4f388de2406ca959b07a);
+        
+    
+        var popup_9267865b7d4945739a4e5fd0e2b7d6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f0f1963b0bc40c0aa347a26a58e8a5f = $(`<div id="html_2f0f1963b0bc40c0aa347a26a58e8a5f" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ST+WILLIAM'S+CARE+CENTER target="_blank">ST WILLIAM'S CARE CENTER</a></div>`)[0];
+            popup_9267865b7d4945739a4e5fd0e2b7d6e4.setContent(html_2f0f1963b0bc40c0aa347a26a58e8a5f);
+        
+
+        marker_5abaad07cd3e4f7390ea715e891b3c80.bindPopup(popup_9267865b7d4945739a4e5fd0e2b7d6e4)
+        ;
+
+        
+    
+    
+            var marker_698aa73b2f5744908e5fe5faf543e2b6 = L.marker(
+                [43.573185, -100.743577],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_2e9185d6ca93406580a0b4e4698c5acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_698aa73b2f5744908e5fe5faf543e2b6.setIcon(icon_2e9185d6ca93406580a0b4e4698c5acb);
+        
+    
+        var popup_18077572ea6d43a69cbdcda9c20c4ff6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ff5d47e28da4d26971a7669a8cf9344 = $(`<div id="html_7ff5d47e28da4d26971a7669a8cf9344" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WHITE+RIVER+HEALTH+CARE+CENTER target="_blank">WHITE RIVER HEALTH CARE CENTER</a></div>`)[0];
+            popup_18077572ea6d43a69cbdcda9c20c4ff6.setContent(html_7ff5d47e28da4d26971a7669a8cf9344);
+        
+
+        marker_698aa73b2f5744908e5fe5faf543e2b6.bindPopup(popup_18077572ea6d43a69cbdcda9c20c4ff6)
+        ;
+
+        
+    
+    
+            var marker_a3ea9a94bbfd40278630e8637431a033 = L.marker(
+                [44.050933, -98.279961],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_7e3fe086ba4b4b9db54cf3a48469bb14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a3ea9a94bbfd40278630e8637431a033.setIcon(icon_7e3fe086ba4b4b9db54cf3a48469bb14);
+        
+    
+        var popup_634276d436d14db293ec99537ccee61e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_037ab45884ba4ad08397044e990375d3 = $(`<div id="html_037ab45884ba4ad08397044e990375d3" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PRAIRIE+VIEW+HEALTHCARE+CENTER target="_blank">PRAIRIE VIEW HEALTHCARE CENTER</a></div>`)[0];
+            popup_634276d436d14db293ec99537ccee61e.setContent(html_037ab45884ba4ad08397044e990375d3);
+        
+
+        marker_a3ea9a94bbfd40278630e8637431a033.bindPopup(popup_634276d436d14db293ec99537ccee61e)
+        ;
+
+        
+    
+    
+            var marker_812dbd5bb29a417292dde1dbbaa07686 = L.marker(
+                [44.869599, -98.520538],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_fdf0b2975942434391fc657aab8f71ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_812dbd5bb29a417292dde1dbbaa07686.setIcon(icon_fdf0b2975942434391fc657aab8f71ab);
+        
+    
+        var popup_a602e51161d4484d9cdec2e38f876d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0732ec202774379ad6e3b3948ed2c47 = $(`<div id="html_a0732ec202774379ad6e3b3948ed2c47" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=EASTERN+STAR+HOME+OF+SOUTH+DAKOTA,+INC target="_blank">EASTERN STAR HOME OF SOUTH DAKOTA, INC</a></div>`)[0];
+            popup_a602e51161d4484d9cdec2e38f876d8a.setContent(html_a0732ec202774379ad6e3b3948ed2c47);
+        
+
+        marker_812dbd5bb29a417292dde1dbbaa07686.bindPopup(popup_a602e51161d4484d9cdec2e38f876d8a)
+        ;
+
+        
+    
+    
+            var marker_e5c0a224015f402bb4a7b94cfd858cf7 = L.marker(
+                [42.915206, -97.39766],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_26f239d3d1714620917075685d268fa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e5c0a224015f402bb4a7b94cfd858cf7.setIcon(icon_26f239d3d1714620917075685d268fa8);
+        
+    
+        var popup_30245c0cd09544e88e4871ad2fc6465d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29344943c58a4eadbabb0a3a96455137 = $(`<div id="html_29344943c58a4eadbabb0a3a96455137" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SD+HUMAN+SERVICES+CENTER+-+GERIATRIC+PROGRAM target="_blank">SD HUMAN SERVICES CENTER - GERIATRIC PROGRAM</a></div>`)[0];
+            popup_30245c0cd09544e88e4871ad2fc6465d.setContent(html_29344943c58a4eadbabb0a3a96455137);
+        
+
+        marker_e5c0a224015f402bb4a7b94cfd858cf7.bindPopup(popup_30245c0cd09544e88e4871ad2fc6465d)
+        ;
+
+        
+    
+    
+            var marker_ed32a959e47f4147bf49a358c1c88f29 = L.marker(
+                [43.71727200000001, -96.496554],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_7fb6aa15cc324dc58a9ca25ab10132bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ed32a959e47f4147bf49a358c1c88f29.setIcon(icon_7fb6aa15cc324dc58a9ca25ab10132bf);
+        
+    
+        var popup_278505aaf24e4e1bac6ee024962b25d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3a4c69064a4405a82bdd5ee8004d159 = $(`<div id="html_f3a4c69064a4405a82bdd5ee8004d159" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PALISADE+HEALTHCARE+CENTER target="_blank">PALISADE HEALTHCARE CENTER</a></div>`)[0];
+            popup_278505aaf24e4e1bac6ee024962b25d1.setContent(html_f3a4c69064a4405a82bdd5ee8004d159);
+        
+
+        marker_ed32a959e47f4147bf49a358c1c88f29.bindPopup(popup_278505aaf24e4e1bac6ee024962b25d1)
+        ;
+
+        
+    
+    
+            var marker_5b4c90071f4c4cf2985368a34d0cd1b8 = L.marker(
+                [43.437808, -103.492484],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_4f9d1802f9cd455da8156efbe7cb816e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5b4c90071f4c4cf2985368a34d0cd1b8.setIcon(icon_4f9d1802f9cd455da8156efbe7cb816e);
+        
+    
+        var popup_5caf3cecc96c494fb0ce4bca117249d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db72e0d0071948fa98db548e2a4d2cb2 = $(`<div id="html_db72e0d0071948fa98db548e2a4d2cb2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MICHAEL+J+FITZMAURICE+SOUTH+DAKOTA+VETERANS+HOME target="_blank">MICHAEL J FITZMAURICE SOUTH DAKOTA VETERANS HOME</a></div>`)[0];
+            popup_5caf3cecc96c494fb0ce4bca117249d3.setContent(html_db72e0d0071948fa98db548e2a4d2cb2);
+        
+
+        marker_5b4c90071f4c4cf2985368a34d0cd1b8.bindPopup(popup_5caf3cecc96c494fb0ce4bca117249d3)
+        ;
+
+        
+    
+    
+            var marker_a4e9bbb1329e44b48e0709e8746dca1e = L.marker(
+                [45.507058, -100.02642700000001],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_c320c414a82e4d95a0212ada47a558e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a4e9bbb1329e44b48e0709e8746dca1e.setIcon(icon_c320c414a82e4d95a0212ada47a558e6);
+        
+    
+        var popup_cf4c895d0a064f95af0c2e6ce33631dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24d4ffad184f4a30b0792604947f0c94 = $(`<div id="html_24d4ffad184f4a30b0792604947f0c94" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WALWORTH+COUNTY+CARE+CENTER,+INC target="_blank">WALWORTH COUNTY CARE CENTER, INC</a></div>`)[0];
+            popup_cf4c895d0a064f95af0c2e6ce33631dd.setContent(html_24d4ffad184f4a30b0792604947f0c94);
+        
+
+        marker_a4e9bbb1329e44b48e0709e8746dca1e.bindPopup(popup_cf4c895d0a064f95af0c2e6ce33631dd)
+        ;
+
+        
+    
+    
+            var marker_f030006519e8418788ba93ef85bb8c74 = L.marker(
+                [43.384183, -98.836293],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_3697052d922c40feb7355ff9f30d3a5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f030006519e8418788ba93ef85bb8c74.setIcon(icon_3697052d922c40feb7355ff9f30d3a5b);
+        
+    
+        var popup_09cfa1cd32d748cdb4a4c5d94e282aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af0446c113f142b1ad08e8fe1cbac5d4 = $(`<div id="html_af0446c113f142b1ad08e8fe1cbac5d4" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PLATTE+CARE+CENTER target="_blank">PLATTE CARE CENTER</a></div>`)[0];
+            popup_09cfa1cd32d748cdb4a4c5d94e282aad.setContent(html_af0446c113f142b1ad08e8fe1cbac5d4);
+        
+
+        marker_f030006519e8418788ba93ef85bb8c74.bindPopup(popup_09cfa1cd32d748cdb4a4c5d94e282aad)
+        ;
+
+        
+    
+    
+            var marker_d4382e612b1f4b88be638e5258caf4bf = L.marker(
+                [44.519642, -98.983317],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_aaca0135963a4438a4cf6783e74296ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d4382e612b1f4b88be638e5258caf4bf.setIcon(icon_aaca0135963a4438a4cf6783e74296ee);
+        
+    
+        var popup_07b5a0fb401f418c868dd7e6c291a5cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d61bf5781d2e4920be09146a412096d6 = $(`<div id="html_d61bf5781d2e4920be09146a412096d6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+MILLER target="_blank">GOOD SAMARITAN SOCIETY MILLER</a></div>`)[0];
+            popup_07b5a0fb401f418c868dd7e6c291a5cd.setContent(html_d61bf5781d2e4920be09146a412096d6);
+        
+
+        marker_d4382e612b1f4b88be638e5258caf4bf.bindPopup(popup_07b5a0fb401f418c868dd7e6c291a5cd)
+        ;
+
+        
+    
+    
+            var marker_56f9070648c94205a6d1b388ce9b7634 = L.marker(
+                [43.832466, -96.711449],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_fcb4f013cac84e33852f068740496e82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_56f9070648c94205a6d1b388ce9b7634.setIcon(icon_fcb4f013cac84e33852f068740496e82);
+        
+    
+        var popup_e05e34b000fa4eedbb633cd31bb8e48d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed36dc7eb9874484841ca201e2df94de = $(`<div id="html_ed36dc7eb9874484841ca201e2df94de" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=DELLS+NURSING+AND+REHAB+CENTER+INC target="_blank">DELLS NURSING AND REHAB CENTER INC</a></div>`)[0];
+            popup_e05e34b000fa4eedbb633cd31bb8e48d.setContent(html_ed36dc7eb9874484841ca201e2df94de);
+        
+
+        marker_56f9070648c94205a6d1b388ce9b7634.bindPopup(popup_e05e34b000fa4eedbb633cd31bb8e48d)
+        ;
+
+        
+    
+    
+            var marker_53ec5b9d9ee1451dabcaf36ea5d4a089 = L.marker(
+                [45.013529, -99.946747],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_565b7b838b0f43679f83ec43b13a18f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_53ec5b9d9ee1451dabcaf36ea5d4a089.setIcon(icon_565b7b838b0f43679f83ec43b13a18f8);
+        
+    
+        var popup_837fc501cf8c49b3b13fa52be6c7f61d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af1cae4f5f124fd3a327c2e2300edcfe = $(`<div id="html_af1cae4f5f124fd3a327c2e2300edcfe" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVERA+OAHE+MANOR target="_blank">AVERA OAHE MANOR</a></div>`)[0];
+            popup_837fc501cf8c49b3b13fa52be6c7f61d.setContent(html_af1cae4f5f124fd3a327c2e2300edcfe);
+        
+
+        marker_53ec5b9d9ee1451dabcaf36ea5d4a089.bindPopup(popup_837fc501cf8c49b3b13fa52be6c7f61d)
+        ;
+
+        
+    
+    
+            var marker_2a5b5a6335fb45589f0e7482115ee971 = L.marker(
+                [43.174902, -97.084357],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_5dfa8a10567f42728290d5e220d6e37d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2a5b5a6335fb45589f0e7482115ee971.setIcon(icon_5dfa8a10567f42728290d5e220d6e37d);
+        
+    
+        var popup_def124e1bcdd4844a01b460f53d521c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7d05409cb2549279ed519a25e708a43 = $(`<div id="html_f7d05409cb2549279ed519a25e708a43" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PIONEER+MEMORIAL+NURSING+HOME target="_blank">PIONEER MEMORIAL NURSING HOME</a></div>`)[0];
+            popup_def124e1bcdd4844a01b460f53d521c4.setContent(html_f7d05409cb2549279ed519a25e708a43);
+        
+
+        marker_2a5b5a6335fb45589f0e7482115ee971.bindPopup(popup_def124e1bcdd4844a01b460f53d521c4)
+        ;
+
+        
+    
+    
+            var marker_bca474e9f11146d1acaa09de3cedd25a = L.marker(
+                [43.237439, -97.572088],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_a22093f26a3f447792267981c6d850b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bca474e9f11146d1acaa09de3cedd25a.setIcon(icon_a22093f26a3f447792267981c6d850b9);
+        
+    
+        var popup_b92f358429f24574b7b93f0695988d62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e75c32b8da9427c88442abfe981f6b3 = $(`<div id="html_8e75c32b8da9427c88442abfe981f6b3" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MENNO-OLIVET+CARE+CENTER target="_blank">MENNO-OLIVET CARE CENTER</a></div>`)[0];
+            popup_b92f358429f24574b7b93f0695988d62.setContent(html_8e75c32b8da9427c88442abfe981f6b3);
+        
+
+        marker_bca474e9f11146d1acaa09de3cedd25a.bindPopup(popup_b92f358429f24574b7b93f0695988d62)
+        ;
+
+        
+    
+    
+            var marker_22e76e0543074aacbe76f3d910dda5c3 = L.marker(
+                [43.590377, -96.540812],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_f5cc7c2493b84545adf824c678d0e2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_22e76e0543074aacbe76f3d910dda5c3.setIcon(icon_f5cc7c2493b84545adf824c678d0e2ca);
+        
+    
+        var popup_b7b561a9ba2246bda192dd9308f598a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b53bf83d6314d10ad979190896af965 = $(`<div id="html_4b53bf83d6314d10ad979190896af965" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=BETHANY+HOME+-+BRANDON target="_blank">BETHANY HOME - BRANDON</a></div>`)[0];
+            popup_b7b561a9ba2246bda192dd9308f598a9.setContent(html_4b53bf83d6314d10ad979190896af965);
+        
+
+        marker_22e76e0543074aacbe76f3d910dda5c3.bindPopup(popup_b7b561a9ba2246bda192dd9308f598a9)
+        ;
+
+        
+    
+    
+            var marker_a9b6a6cb35a14e9499ccc0d6ccccd051 = L.marker(
+                [43.556782, -97.502251],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_d543b26d1fc844d7a6da8165504f2137 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a9b6a6cb35a14e9499ccc0d6ccccd051.setIcon(icon_d543b26d1fc844d7a6da8165504f2137);
+        
+    
+        var popup_5cddcaf8f7324c198fcee1b443be471c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_748c6e204b3b4e9aad1f92601c440f29 = $(`<div id="html_748c6e204b3b4e9aad1f92601c440f29" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=DIAMOND+CARE+CENTER target="_blank">DIAMOND CARE CENTER</a></div>`)[0];
+            popup_5cddcaf8f7324c198fcee1b443be471c.setContent(html_748c6e204b3b4e9aad1f92601c440f29);
+        
+
+        marker_a9b6a6cb35a14e9499ccc0d6ccccd051.bindPopup(popup_5cddcaf8f7324c198fcee1b443be471c)
+        ;
+
+        
+    
+    
+            var marker_c094a8a5f7104206b3f116c7023485e6 = L.marker(
+                [44.748721, -96.68415],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_592094f908794519929da4766143ffed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c094a8a5f7104206b3f116c7023485e6.setIcon(icon_592094f908794519929da4766143ffed);
+        
+    
+        var popup_97c52777ffa04e2cb084c3b37ded70b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c510fd5446b49f88aa026ebd1979324 = $(`<div id="html_0c510fd5446b49f88aa026ebd1979324" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GOOD+SAMARITAN+SOCIETY+DEUEL+COUNTY target="_blank">GOOD SAMARITAN SOCIETY DEUEL COUNTY</a></div>`)[0];
+            popup_97c52777ffa04e2cb084c3b37ded70b5.setContent(html_0c510fd5446b49f88aa026ebd1979324);
+        
+
+        marker_c094a8a5f7104206b3f116c7023485e6.bindPopup(popup_97c52777ffa04e2cb084c3b37ded70b5)
+        ;
+
+        
+    
+    
+            var marker_f340a063ef9146f299bdac007b654371 = L.marker(
+                [42.777542, -96.918492],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_cb04e34386634e859019fb6b4a4847c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f340a063ef9146f299bdac007b654371.setIcon(icon_cb04e34386634e859019fb6b4a4847c0);
+        
+    
+        var popup_0f0e511a3425456ebbf715d4336cf54c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a07f0159b6040d298af4266c191c801 = $(`<div id="html_8a07f0159b6040d298af4266c191c801" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SANFORD+CARE+CENTER+VERMILLION target="_blank">SANFORD CARE CENTER VERMILLION</a></div>`)[0];
+            popup_0f0e511a3425456ebbf715d4336cf54c.setContent(html_8a07f0159b6040d298af4266c191c801);
+        
+
+        marker_f340a063ef9146f299bdac007b654371.bindPopup(popup_0f0e511a3425456ebbf715d4336cf54c)
+        ;
+
+        
+    
+    
+            var marker_34473cd4854f4fea85f2231556f09df0 = L.marker(
+                [43.715602, -98.008517],
+                {}
+            ).addTo(map_7a2bf59b1fb4442ab31e3fb1e1d3750f);
+        
+    
+            var icon_598ec86fe69249fc90a4de31e682fe7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_34473cd4854f4fea85f2231556f09df0.setIcon(icon_598ec86fe69249fc90a4de31e682fe7b);
+        
+    
+        var popup_8f15a94e2c954cae8586a315e82fbca2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d802ca167b341f2b804005785fcc50d = $(`<div id="html_4d802ca167b341f2b804005785fcc50d" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=FIRESTEEL+HEALTHCARE+CENTER target="_blank">FIRESTEEL HEALTHCARE CENTER</a></div>`)[0];
+            popup_8f15a94e2c954cae8586a315e82fbca2.setContent(html_4d802ca167b341f2b804005785fcc50d);
+        
+
+        marker_34473cd4854f4fea85f2231556f09df0.bindPopup(popup_8f15a94e2c954cae8586a315e82fbca2)
+        ;
+
+        
+    
+</script>
