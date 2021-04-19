@@ -2,7 +2,6 @@
 from flask import Flask, render_template, request, session
 from flask_session import Session
 # TODO # from flask_mail import Mail, Message
-# Email reports to users??? ^^^
 from os import getenv
 import pandas as pd
 import numpy as np
@@ -15,8 +14,7 @@ from .user_database import insert_user_data, pull_user_data, login_process, user
 import datetime
 from datetime import date
 
-# Instantiate Application
-# All routes the application follows
+
 def create_app():
     """
     Function to deploy heroku application.
@@ -144,26 +142,18 @@ def create_app():
                                ad1=ad_1, ad2=ad_2, ad3=ad_3, 
                                htmlvar1=htmlvar_1, htmlvar2=htmlvar_2, htmlvar3=htmlvar_3)
     
-    # @app.route('/confirm', methods = ['GET', 'POST'])
-    # TODO # Make this page combined with /name_search
-    # def recommendations():
-    #     """
-    #     Confirms application has found correct facility name.
-    #     """
-    #     facil_name=request.args.get('facility_name')
-    #     num1, num2, num3, name1, name2, name3, ad1, ad2, ad3 = return_similar(facil_name)
-        
-    #     return render_template('confirm.html', 
-    #                            name1=name1, name2=name2, name3=name3, 
-    #                            ad1=ad1, ad2=ad2, ad3=ad3)       
-    
     
     @app.route('/location_search')
     def location_search():
         """
         Allows user to search by map for a facility. 
         """
-        return render_template('index.html')
+        return render_template('location_search.html')
+    
+    @app.route('/state')
+    def state():
+        state=request.args.get('State')
+        return render_template('states/' + state + '.html')
     
     @app.route('/report', methods = ['GET', 'POST'])
     def report():

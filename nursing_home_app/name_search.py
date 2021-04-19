@@ -4,7 +4,7 @@ import pandas as pd
 import re
 import sqlite3
 
-# Modeling
+# Modeling Packages
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -34,6 +34,8 @@ def return_similar(user_type, sql_name='nhs_descriptions.sqlite3'):
     similar_score = cosine_similarity(trsfm[0:1], trsfm)
     vect['score']= np.array(similar_score[0])
     vect = vect.sort_values(by = 'score', ascending = False).reset_index()
+    
+    # RETURNING THE INFORMATION OF SIMILAR FACILITIES
     num1 = df[df['federal_provider_number']==(vect['index'][1])]['federal_provider_number'].values[0]
     num2 = df[df['federal_provider_number']==(vect['index'][2])]['federal_provider_number'].values[0]
     num3 = df[df['federal_provider_number']==(vect['index'][3])]['federal_provider_number'].values[0]
@@ -44,6 +46,3 @@ def return_similar(user_type, sql_name='nhs_descriptions.sqlite3'):
     ad2 = df[df['federal_provider_number']==num2]['full_address'].values[0]
     ad3 = df[df['federal_provider_number']==num3]['full_address'].values[0]
     return num1, num2, num3, name1, name2, name3, ad1, ad2, ad3
-
-# num1, num2, num3, name1, name2, name3, ad1, ad2, ad3 = return_similar('seeson carecenter')
-# print(name1)

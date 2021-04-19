@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6af31f891ddd458a9c5cc7cd2bc40237 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6af31f891ddd458a9c5cc7cd2bc40237" ></div>
+        
+</body>
+<script>    
+    
+            var map_6af31f891ddd458a9c5cc7cd2bc40237 = L.map(
+                "map_6af31f891ddd458a9c5cc7cd2bc40237",
+                {
+                    center: [21.29772, -157.861279],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5eb428a4ac94b2a840166f89062e49c = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/jenfaith/ckm3ufeuf0v8y17qqi8d7gfre/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiamVuZmFpdGgiLCJhIjoiY2ttM3QzYnI1MDhzZTJucWRubXlzMHphdCJ9.3FsZLNb_YZlAwssJDfV4Cw",
+                {"attribution": "Map Box Attribute", "detectRetina": false, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var marker_76e1bea4deb04d4787ec257656878ac1 = L.marker(
+                [21.29772, -157.831968],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_d3c63e0ec4714ff0ab1504ecd17b1e7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76e1bea4deb04d4787ec257656878ac1.setIcon(icon_d3c63e0ec4714ff0ab1504ecd17b1e7a);
+        
+    
+        var popup_61b0ab11fc6044c3aeb5e9055e9ebc1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c901889a31354af2853a79a0b869adee = $(`<div id="html_c901889a31354af2853a79a0b869adee" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ISLANDS+SKILLED+NURSING+&+REHABILITATION target="_blank">ISLANDS SKILLED NURSING & REHABILITATION</a></div>`)[0];
+            popup_61b0ab11fc6044c3aeb5e9055e9ebc1c.setContent(html_c901889a31354af2853a79a0b869adee);
+        
+
+        marker_76e1bea4deb04d4787ec257656878ac1.bindPopup(popup_61b0ab11fc6044c3aeb5e9055e9ebc1c)
+        ;
+
+        
+    
+    
+            var marker_aa43eba798df4ab886334377f0ab8e6b = L.marker(
+                [21.32958, -157.861279],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_b4186cb14cc14da6b4d1670f48311081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aa43eba798df4ab886334377f0ab8e6b.setIcon(icon_b4186cb14cc14da6b4d1670f48311081);
+        
+    
+        var popup_070c411b698442ba973ad0b0c62735d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dc6743a6e1c486abedc68248c2d3832 = $(`<div id="html_8dc6743a6e1c486abedc68248c2d3832" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MALUHIA target="_blank">MALUHIA</a></div>`)[0];
+            popup_070c411b698442ba973ad0b0c62735d4.setContent(html_8dc6743a6e1c486abedc68248c2d3832);
+        
+
+        marker_aa43eba798df4ab886334377f0ab8e6b.bindPopup(popup_070c411b698442ba973ad0b0c62735d4)
+        ;
+
+        
+    
+    
+            var marker_68538fa8aa9a41199216b945b314783a = L.marker(
+                [21.323194, -157.848918],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_8f777085437444cfa419eb6997d47d02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68538fa8aa9a41199216b945b314783a.setIcon(icon_8f777085437444cfa419eb6997d47d02);
+        
+    
+        var popup_156b9588fc384b959e80d0c43dda533d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbea28bd512f4bd8917fca1694081e02 = $(`<div id="html_fbea28bd512f4bd8917fca1694081e02" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=15+CRAIGSIDE target="_blank">15 CRAIGSIDE</a></div>`)[0];
+            popup_156b9588fc384b959e80d0c43dda533d.setContent(html_fbea28bd512f4bd8917fca1694081e02);
+        
+
+        marker_68538fa8aa9a41199216b945b314783a.bindPopup(popup_156b9588fc384b959e80d0c43dda533d)
+        ;
+
+        
+    
+    
+            var marker_43706b37d0ec4ca6ab79aeb6ed9c298e = L.marker(
+                [21.960079, -159.67005500000002],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_34e36c862c1942378d0ba815fab7397f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_43706b37d0ec4ca6ab79aeb6ed9c298e.setIcon(icon_34e36c862c1942378d0ba815fab7397f);
+        
+    
+        var popup_dbce98053cb44a72a535c4a0050b0703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f72e619869c84c1dbf963127dab989c4 = $(`<div id="html_f72e619869c84c1dbf963127dab989c4" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KAUAI+VETERANS+MEMORIAL+HOSPITAL target="_blank">KAUAI VETERANS MEMORIAL HOSPITAL</a></div>`)[0];
+            popup_dbce98053cb44a72a535c4a0050b0703.setContent(html_f72e619869c84c1dbf963127dab989c4);
+        
+
+        marker_43706b37d0ec4ca6ab79aeb6ed9c298e.bindPopup(popup_dbce98053cb44a72a535c4a0050b0703)
+        ;
+
+        
+    
+    
+            var marker_92747e3c579c40aea450a3e3d20603cd = L.marker(
+                [20.701994, -156.357099],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_3eb6bff2ccf64edbb42930776911acd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_92747e3c579c40aea450a3e3d20603cd.setIcon(icon_3eb6bff2ccf64edbb42930776911acd8);
+        
+    
+        var popup_d94d531f2ab144418a3aabf1f7f13f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_952b0e768fd34a5f81497a935bedd8df = $(`<div id="html_952b0e768fd34a5f81497a935bedd8df" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KULA+HOSPITAL target="_blank">KULA HOSPITAL</a></div>`)[0];
+            popup_d94d531f2ab144418a3aabf1f7f13f1b.setContent(html_952b0e768fd34a5f81497a935bedd8df);
+        
+
+        marker_92747e3c579c40aea450a3e3d20603cd.bindPopup(popup_d94d531f2ab144418a3aabf1f7f13f1b)
+        ;
+
+        
+    
+    
+            var marker_b3a2efecb1cb4f579981a83428992c40 = L.marker(
+                [21.323884, -157.857074],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_a0801b60e31b4b739e668ce631970820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b3a2efecb1cb4f579981a83428992c40.setIcon(icon_a0801b60e31b4b739e668ce631970820);
+        
+    
+        var popup_cc0bc57e161f432ca86876fe71186a2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96ae0d23be1c4bf68c0fd0a61ee55000 = $(`<div id="html_96ae0d23be1c4bf68c0fd0a61ee55000" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LILIHA+HEALTHCARE+CENTER target="_blank">LILIHA HEALTHCARE CENTER</a></div>`)[0];
+            popup_cc0bc57e161f432ca86876fe71186a2f.setContent(html_96ae0d23be1c4bf68c0fd0a61ee55000);
+        
+
+        marker_b3a2efecb1cb4f579981a83428992c40.bindPopup(popup_cc0bc57e161f432ca86876fe71186a2f)
+        ;
+
+        
+    
+    
+            var marker_2f1293f125d24226a95b0bcc9b93a56e = L.marker(
+                [21.926579, -159.485438],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_e0fa818020ee4358b3f4d3f1cce113ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f1293f125d24226a95b0bcc9b93a56e.setIcon(icon_e0fa818020ee4358b3f4d3f1cce113ae);
+        
+    
+        var popup_5dc033baa01042a28a45a0b01b98781f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e649b388786b4064a1f6fb2657ec1b17 = $(`<div id="html_e649b388786b4064a1f6fb2657ec1b17" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+KUPUNA+HERITAGE+HOME,+LLC target="_blank">HALE KUPUNA HERITAGE HOME, LLC</a></div>`)[0];
+            popup_5dc033baa01042a28a45a0b01b98781f.setContent(html_e649b388786b4064a1f6fb2657ec1b17);
+        
+
+        marker_2f1293f125d24226a95b0bcc9b93a56e.bindPopup(popup_5dc033baa01042a28a45a0b01b98781f)
+        ;
+
+        
+    
+    
+            var marker_0a1e5c90f9cd4902a3e26f96ee4b0cbc = L.marker(
+                [21.291457000000005, -157.836156],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_21b0b0a33f714d85888565b30900a4bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0a1e5c90f9cd4902a3e26f96ee4b0cbc.setIcon(icon_21b0b0a33f714d85888565b30900a4bb);
+        
+    
+        var popup_11847b399412458a95e5a990dcada619 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa2195c2864e48e884df84dfa51ae772 = $(`<div id="html_aa2195c2864e48e884df84dfa51ae772" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KALAKAUA+GARDENS target="_blank">KALAKAUA GARDENS</a></div>`)[0];
+            popup_11847b399412458a95e5a990dcada619.setContent(html_aa2195c2864e48e884df84dfa51ae772);
+        
+
+        marker_0a1e5c90f9cd4902a3e26f96ee4b0cbc.bindPopup(popup_11847b399412458a95e5a990dcada619)
+        ;
+
+        
+    
+    
+            var marker_e75df834ad6b4f668724fc97c0a48229 = L.marker(
+                [21.345301, -157.869859],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_22d7d532bacf4df19a8abfa277bd0452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e75df834ad6b4f668724fc97c0a48229.setIcon(icon_22d7d532bacf4df19a8abfa277bd0452);
+        
+    
+        var popup_8ea8e552ec0d4a4b962d6f21566e06e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d29931e1b334b8989b051da60a1f55f = $(`<div id="html_1d29931e1b334b8989b051da60a1f55f" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=AVALON+CARE+CENTER+-+HONOLULU,+LLC target="_blank">AVALON CARE CENTER - HONOLULU, LLC</a></div>`)[0];
+            popup_8ea8e552ec0d4a4b962d6f21566e06e7.setContent(html_1d29931e1b334b8989b051da60a1f55f);
+        
+
+        marker_e75df834ad6b4f668724fc97c0a48229.bindPopup(popup_8ea8e552ec0d4a4b962d6f21566e06e7)
+        ;
+
+        
+    
+    
+            var marker_1b5fa5540cc6488f85c8775b6b8f4401 = L.marker(
+                [21.986288, -159.36628],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_11f51014b9ee47c5baac24459948324e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b5fa5540cc6488f85c8775b6b8f4401.setIcon(icon_11f51014b9ee47c5baac24459948324e);
+        
+    
+        var popup_ffdaf1fb79ac454491ffe52888cb0869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92236a8ad2cd4f4fbbb894999b54e4b2 = $(`<div id="html_92236a8ad2cd4f4fbbb894999b54e4b2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=GARDEN+ISLE+HEALTHCARE+AND+REHABILITATION+CENTER target="_blank">GARDEN ISLE HEALTHCARE AND REHABILITATION CENTER</a></div>`)[0];
+            popup_ffdaf1fb79ac454491ffe52888cb0869.setContent(html_92236a8ad2cd4f4fbbb894999b54e4b2);
+        
+
+        marker_1b5fa5540cc6488f85c8775b6b8f4401.bindPopup(popup_ffdaf1fb79ac454491ffe52888cb0869)
+        ;
+
+        
+    
+    
+            var marker_b0a2f4a844474767a773243c8c4b2652 = L.marker(
+                [21.297395, -157.831622],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_4de223a922b449849b4efb5c0890a52d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b0a2f4a844474767a773243c8c4b2652.setIcon(icon_4de223a922b449849b4efb5c0890a52d);
+        
+    
+        var popup_8e417a16cabd4e3e8a4b4d82a622ac88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e78a11605f494d0e8f7fc1f42f5cc1f5 = $(`<div id="html_e78a11605f494d0e8f7fc1f42f5cc1f5" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=OAHU+CARE+FACILITY target="_blank">OAHU CARE FACILITY</a></div>`)[0];
+            popup_8e417a16cabd4e3e8a4b4d82a622ac88.setContent(html_e78a11605f494d0e8f7fc1f42f5cc1f5);
+        
+
+        marker_b0a2f4a844474767a773243c8c4b2652.bindPopup(popup_8e417a16cabd4e3e8a4b4d82a622ac88)
+        ;
+
+        
+    
+    
+            var marker_503a099e9371431ca6b3c28bba3355cd = L.marker(
+                [21.345474, -158.068451],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_611ee903a5254fd88830c474ac0f2ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_503a099e9371431ca6b3c28bba3355cd.setIcon(icon_611ee903a5254fd88830c474ac0f2ac2);
+        
+    
+        var popup_280c381162624681a5f1480ab449d665 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_328d67fdcb5b4b0683ba58731b49ec9a = $(`<div id="html_328d67fdcb5b4b0683ba58731b49ec9a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KA+PUNAWAI+OLA target="_blank">KA PUNAWAI OLA</a></div>`)[0];
+            popup_280c381162624681a5f1480ab449d665.setContent(html_328d67fdcb5b4b0683ba58731b49ec9a);
+        
+
+        marker_503a099e9371431ca6b3c28bba3355cd.bindPopup(popup_280c381162624681a5f1480ab449d665)
+        ;
+
+        
+    
+    
+            var marker_decd89e2c848438bbdf364270e1d4fa7 = L.marker(
+                [19.570396, -155.961101],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_f9bde554beb9435faf24ac693ca2fff2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_decd89e2c848438bbdf364270e1d4fa7.setIcon(icon_f9bde554beb9435faf24ac693ca2fff2);
+        
+    
+        var popup_491f545d8ed7420488d6efdc33e61a11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39d6982987114ad8b912568083db14ae = $(`<div id="html_39d6982987114ad8b912568083db14ae" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LIFE+CARE+CENTER+OF+KONA target="_blank">LIFE CARE CENTER OF KONA</a></div>`)[0];
+            popup_491f545d8ed7420488d6efdc33e61a11.setContent(html_39d6982987114ad8b912568083db14ae);
+        
+
+        marker_decd89e2c848438bbdf364270e1d4fa7.bindPopup(popup_491f545d8ed7420488d6efdc33e61a11)
+        ;
+
+        
+    
+    
+            var marker_441608e807c140ce8bc4f9df014f843e = L.marker(
+                [21.958189, -159.671258],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_6e2cd1b4327f42f28dfa883b047d482b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_441608e807c140ce8bc4f9df014f843e.setIcon(icon_6e2cd1b4327f42f28dfa883b047d482b);
+        
+    
+        var popup_902cf088d959423a968e4b1e2cb04cac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_498f7fa607d24de99d93e7fabac50dc2 = $(`<div id="html_498f7fa607d24de99d93e7fabac50dc2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KAUAI+CARE+CENTER target="_blank">KAUAI CARE CENTER</a></div>`)[0];
+            popup_902cf088d959423a968e4b1e2cb04cac.setContent(html_498f7fa607d24de99d93e7fabac50dc2);
+        
+
+        marker_441608e807c140ce8bc4f9df014f843e.bindPopup(popup_902cf088d959423a968e4b1e2cb04cac)
+        ;
+
+        
+    
+    
+            var marker_0a7e2f98414e409196fedee43f129632 = L.marker(
+                [19.717168, -155.116301],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_46fa95ce91274fcd8a3ef2e92599a2ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0a7e2f98414e409196fedee43f129632.setIcon(icon_46fa95ce91274fcd8a3ef2e92599a2ed);
+        
+    
+        var popup_fca2449ae7014d9ca6f22568a5fee15d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7aa35f351e614f079e1261996687e5cb = $(`<div id="html_7aa35f351e614f079e1261996687e5cb" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+ANUENUE+RESTORATIVE+CARE target="_blank">HALE ANUENUE RESTORATIVE CARE</a></div>`)[0];
+            popup_fca2449ae7014d9ca6f22568a5fee15d.setContent(html_7aa35f351e614f079e1261996687e5cb);
+        
+
+        marker_0a7e2f98414e409196fedee43f129632.bindPopup(popup_fca2449ae7014d9ca6f22568a5fee15d)
+        ;
+
+        
+    
+    
+            var marker_fd1f55cf70ac49138504967a0366191c = L.marker(
+                [21.414728, -157.794851],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_308885fd06cc42a48d72c791252e30a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fd1f55cf70ac49138504967a0366191c.setIcon(icon_308885fd06cc42a48d72c791252e30a5);
+        
+    
+        var popup_4022eb7f3a0b474593d2b534db5e7d8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2608ada272234a5c9d1d01b2bc8d1b6b = $(`<div id="html_2608ada272234a5c9d1d01b2bc8d1b6b" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ANN+PEARL+NURSING+FACILITY target="_blank">ANN PEARL NURSING FACILITY</a></div>`)[0];
+            popup_4022eb7f3a0b474593d2b534db5e7d8e.setContent(html_2608ada272234a5c9d1d01b2bc8d1b6b);
+        
+
+        marker_fd1f55cf70ac49138504967a0366191c.bindPopup(popup_4022eb7f3a0b474593d2b534db5e7d8e)
+        ;
+
+        
+    
+    
+            var marker_ab5018d98be44057a0975fe37e3100c7 = L.marker(
+                [21.498511, -158.027299],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_ca65069270b142d1ae8e6f3283b50cbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ab5018d98be44057a0975fe37e3100c7.setIcon(icon_ca65069270b142d1ae8e6f3283b50cbc);
+        
+    
+        var popup_b7dad3855f184f188ea03d62f2232890 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a768ace66bf94b3cb188c5e71679c0a2 = $(`<div id="html_a768ace66bf94b3cb188c5e71679c0a2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WAHIAWA+GENERAL+HOSPITAL target="_blank">WAHIAWA GENERAL HOSPITAL</a></div>`)[0];
+            popup_b7dad3855f184f188ea03d62f2232890.setContent(html_a768ace66bf94b3cb188c5e71679c0a2);
+        
+
+        marker_ab5018d98be44057a0975fe37e3100c7.bindPopup(popup_b7dad3855f184f188ea03d62f2232890)
+        ;
+
+        
+    
+    
+            var marker_ab7f927a706b45c78267132f5704a55a = L.marker(
+                [21.469532, -158.205764],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_b4eef161fb434e0c8feffd51158873c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ab7f927a706b45c78267132f5704a55a.setIcon(icon_b4eef161fb434e0c8feffd51158873c3);
+        
+    
+        var popup_d5a2ad754bc54e6a814586ee64253a0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ea228aff195440fa98ce014694c2fa6 = $(`<div id="html_6ea228aff195440fa98ce014694c2fa6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PU'UWAI+'O+MAKAHA target="_blank">PU'UWAI 'O MAKAHA</a></div>`)[0];
+            popup_d5a2ad754bc54e6a814586ee64253a0b.setContent(html_6ea228aff195440fa98ce014694c2fa6);
+        
+
+        marker_ab7f927a706b45c78267132f5704a55a.bindPopup(popup_d5a2ad754bc54e6a814586ee64253a0b)
+        ;
+
+        
+    
+    
+            var marker_bf90048928424812affb5ba4187cfdcd = L.marker(
+                [21.280389000000003, -157.782462],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_471a02d0157a4abda8869197d387e1e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bf90048928424812affb5ba4187cfdcd.setIcon(icon_471a02d0157a4abda8869197d387e1e1);
+        
+    
+        var popup_f8ec430803e543638ea5ab3d45eab6c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d64057f7f9f04ef1aec09ee595fdf86a = $(`<div id="html_d64057f7f9f04ef1aec09ee595fdf86a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HI'OLANI+CARE+CENTER+AT+KAHALA+NUI target="_blank">HI'OLANI CARE CENTER AT KAHALA NUI</a></div>`)[0];
+            popup_f8ec430803e543638ea5ab3d45eab6c8.setContent(html_d64057f7f9f04ef1aec09ee595fdf86a);
+        
+
+        marker_bf90048928424812affb5ba4187cfdcd.bindPopup(popup_f8ec430803e543638ea5ab3d45eab6c8)
+        ;
+
+        
+    
+    
+            var marker_e79b42b5d0b6412296ea8d1bdc5aba7c = L.marker(
+                [20.076271, -155.470595],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_3a14cb3b74c94790bcb549f1c44b6f9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e79b42b5d0b6412296ea8d1bdc5aba7c.setIcon(icon_3a14cb3b74c94790bcb549f1c44b6f9f);
+        
+    
+        var popup_c597c2a5b87446a2a7b84d6f3fbd490b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ee9a59d15e34446a933e817b6745905 = $(`<div id="html_6ee9a59d15e34446a933e817b6745905" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+HO'OLA+HAMAKUA target="_blank">HALE HO'OLA HAMAKUA</a></div>`)[0];
+            popup_c597c2a5b87446a2a7b84d6f3fbd490b.setContent(html_6ee9a59d15e34446a933e817b6745905);
+        
+
+        marker_e79b42b5d0b6412296ea8d1bdc5aba7c.bindPopup(popup_c597c2a5b87446a2a7b84d6f3fbd490b)
+        ;
+
+        
+    
+    
+            var marker_5b748e274ff24c0882c3fd85ba32ce6d = L.marker(
+                [21.298803, -157.836843],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_00c0aa95707b4b8ba105bc0e53556d46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5b748e274ff24c0882c3fd85ba32ce6d.setIcon(icon_00c0aa95707b4b8ba105bc0e53556d46);
+        
+    
+        var popup_68acc600d32740c1ac774445b1ca371b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc1f9f77dac1429caddc58b34a5f7ae8 = $(`<div id="html_cc1f9f77dac1429caddc58b34a5f7ae8" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+OLA+KINO target="_blank">HALE OLA KINO</a></div>`)[0];
+            popup_68acc600d32740c1ac774445b1ca371b.setContent(html_cc1f9f77dac1429caddc58b34a5f7ae8);
+        
+
+        marker_5b748e274ff24c0882c3fd85ba32ce6d.bindPopup(popup_68acc600d32740c1ac774445b1ca371b)
+        ;
+
+        
+    
+    
+            var marker_f80c391477c94e7baa7461ee3284b39e = L.marker(
+                [21.391627, -157.97124],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_420f55c6e7614e5dbae2fe9d573e501d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f80c391477c94e7baa7461ee3284b39e.setIcon(icon_420f55c6e7614e5dbae2fe9d573e501d);
+        
+    
+        var popup_3ca7f1a2ebcc4ead98ca935bc35d0ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea05e9ae6916448a81d2f4827fc334ce = $(`<div id="html_ea05e9ae6916448a81d2f4827fc334ce" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PEARL+CITY+NURSING+HOME target="_blank">PEARL CITY NURSING HOME</a></div>`)[0];
+            popup_3ca7f1a2ebcc4ead98ca935bc35d0ef3.setContent(html_ea05e9ae6916448a81d2f4827fc334ce);
+        
+
+        marker_f80c391477c94e7baa7461ee3284b39e.bindPopup(popup_3ca7f1a2ebcc4ead98ca935bc35d0ef3)
+        ;
+
+        
+    
+    
+            var marker_1cf77e4db49d4082a017aafae9d040ef = L.marker(
+                [19.682824, -155.095071],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_998c80d219144feb979d4825ffac0b1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1cf77e4db49d4082a017aafae9d040ef.setIcon(icon_998c80d219144feb979d4825ffac0b1c);
+        
+    
+        var popup_b042abc468cd4c94bb26947e25c3184b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c5a62477c994bad95e6ffb7e3a1f4c6 = $(`<div id="html_4c5a62477c994bad95e6ffb7e3a1f4c6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LIFE+CARE+CENTER+OF+HILO target="_blank">LIFE CARE CENTER OF HILO</a></div>`)[0];
+            popup_b042abc468cd4c94bb26947e25c3184b.setContent(html_4c5a62477c994bad95e6ffb7e3a1f4c6);
+        
+
+        marker_1cf77e4db49d4082a017aafae9d040ef.bindPopup(popup_b042abc468cd4c94bb26947e25c3184b)
+        ;
+
+        
+    
+    
+            var marker_d0cba239b8d343da8a6037fa34af5cd6 = L.marker(
+                [21.273675, -157.801208],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_2608495d90cc4f67b7cf2dc3059c41ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d0cba239b8d343da8a6037fa34af5cd6.setIcon(icon_2608495d90cc4f67b7cf2dc3059c41ff);
+        
+    
+        var popup_9c77f665a5774842b078b6532c53193f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c8676a5e57f4d4caede3d2ad504cad2 = $(`<div id="html_4c8676a5e57f4d4caede3d2ad504cad2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LEAHI+HOSPITAL target="_blank">LEAHI HOSPITAL</a></div>`)[0];
+            popup_9c77f665a5774842b078b6532c53193f.setContent(html_4c8676a5e57f4d4caede3d2ad504cad2);
+        
+
+        marker_d0cba239b8d343da8a6037fa34af5cd6.bindPopup(popup_9c77f665a5774842b078b6532c53193f)
+        ;
+
+        
+    
+    
+            var marker_b97e7b718aab4dc184592a3890644bc0 = L.marker(
+                [20.892931, -156.494896],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_eafaf9fe5a0542ea8a5ff9b45b7a665c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b97e7b718aab4dc184592a3890644bc0.setIcon(icon_eafaf9fe5a0542ea8a5ff9b45b7a665c);
+        
+    
+        var popup_9ebb19a9da6a43d8891ff5f25b836324 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d04ca8be631d442bba1429ddbe4fb958 = $(`<div id="html_d04ca8be631d442bba1429ddbe4fb958" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+MAKUA+HEALTH+SERVICES target="_blank">HALE MAKUA HEALTH SERVICES</a></div>`)[0];
+            popup_9ebb19a9da6a43d8891ff5f25b836324.setContent(html_d04ca8be631d442bba1429ddbe4fb958);
+        
+
+        marker_b97e7b718aab4dc184592a3890644bc0.bindPopup(popup_9ebb19a9da6a43d8891ff5f25b836324)
+        ;
+
+        
+    
+    
+            var marker_ee285e2b34a543e4a6f63510569ee276 = L.marker(
+                [20.826735, -156.918002],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_2ae92753184242f8aaf99a0b7e6a5ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ee285e2b34a543e4a6f63510569ee276.setIcon(icon_2ae92753184242f8aaf99a0b7e6a5ef5);
+        
+    
+        var popup_5215c4330373468c9a571fb6fe06d3ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ded7bf7bfca42f19facb18a56c96f0a = $(`<div id="html_3ded7bf7bfca42f19facb18a56c96f0a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LANAI+COMMUNITY+HOSPITAL target="_blank">LANAI COMMUNITY HOSPITAL</a></div>`)[0];
+            popup_5215c4330373468c9a571fb6fe06d3ae.setContent(html_3ded7bf7bfca42f19facb18a56c96f0a);
+        
+
+        marker_ee285e2b34a543e4a6f63510569ee276.bindPopup(popup_5215c4330373468c9a571fb6fe06d3ae)
+        ;
+
+        
+    
+    
+            var marker_65e0fec734f34e2db9cffe7efacc4ea3 = L.marker(
+                [21.401751, -157.784531],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_ba6f8f89e6e14bc6a7ff33f87ae58509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_65e0fec734f34e2db9cffe7efacc4ea3.setIcon(icon_ba6f8f89e6e14bc6a7ff33f87ae58509);
+        
+    
+        var popup_db786754ecce4008aefdf968ff5e2df4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c84ae44c3836461194e728cd5699e2c5 = $(`<div id="html_c84ae44c3836461194e728cd5699e2c5" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HARRY+AND+JEANETTE+WEINBERG+CARE+CENTER target="_blank">HARRY AND JEANETTE WEINBERG CARE CENTER</a></div>`)[0];
+            popup_db786754ecce4008aefdf968ff5e2df4.setContent(html_c84ae44c3836461194e728cd5699e2c5);
+        
+
+        marker_65e0fec734f34e2db9cffe7efacc4ea3.bindPopup(popup_db786754ecce4008aefdf968ff5e2df4)
+        ;
+
+        
+    
+    
+            var marker_20af743e39ad49979e641769ddf55aa2 = L.marker(
+                [21.322211, -157.856211],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_fb7f44c19c0f46a39dd56c61d92bfdb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_20af743e39ad49979e641769ddf55aa2.setIcon(icon_fb7f44c19c0f46a39dd56c61d92bfdb8);
+        
+    
+        var popup_e30281e9fc3d42199a3e2bd63cda0e20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b6175f9cff14655b2cae6acf7b971b4 = $(`<div id="html_1b6175f9cff14655b2cae6acf7b971b4" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KUAKINI+GERIATRIC+CARE,+INC target="_blank">KUAKINI GERIATRIC CARE, INC</a></div>`)[0];
+            popup_e30281e9fc3d42199a3e2bd63cda0e20.setContent(html_1b6175f9cff14655b2cae6acf7b971b4);
+        
+
+        marker_20af743e39ad49979e641769ddf55aa2.bindPopup(popup_e30281e9fc3d42199a3e2bd63cda0e20)
+        ;
+
+        
+    
+    
+            var marker_43fec97ddc6b441a9661962cb293a8d9 = L.marker(
+                [21.335953, -157.839962],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_56d6838838524cf09767ba1fb45a2713 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_43fec97ddc6b441a9661962cb293a8d9.setIcon(icon_56d6838838524cf09767ba1fb45a2713);
+        
+    
+        var popup_780ac258f88c4974b9f1df56c8098fac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bdc9dc015ae4748aada68c8b9a58017 = $(`<div id="html_9bdc9dc015ae4748aada68c8b9a58017" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=NUUANU+HALE target="_blank">NUUANU HALE</a></div>`)[0];
+            popup_780ac258f88c4974b9f1df56c8098fac.setContent(html_9bdc9dc015ae4748aada68c8b9a58017);
+        
+
+        marker_43fec97ddc6b441a9661962cb293a8d9.bindPopup(popup_780ac258f88c4974b9f1df56c8098fac)
+        ;
+
+        
+    
+    
+            var marker_f081348ee5b6414fb42279dd3b9838b1 = L.marker(
+                [21.308577, -157.840072],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_cef9abe6c0f1437e816cfbb190e90c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f081348ee5b6414fb42279dd3b9838b1.setIcon(icon_cef9abe6c0f1437e816cfbb190e90c4e);
+        
+    
+        var popup_df63c2b39fd843f290ee2d9bb5c4e096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79372a317399423188793cf2e5f9f93a = $(`<div id="html_79372a317399423188793cf2e5f9f93a" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+NANI+REHABILITATION+AND+NURSING+CENTER target="_blank">HALE NANI REHABILITATION AND NURSING CENTER</a></div>`)[0];
+            popup_df63c2b39fd843f290ee2d9bb5c4e096.setContent(html_79372a317399423188793cf2e5f9f93a);
+        
+
+        marker_f081348ee5b6414fb42279dd3b9838b1.bindPopup(popup_df63c2b39fd843f290ee2d9bb5c4e096)
+        ;
+
+        
+    
+    
+            var marker_154fe18b63da4705a2c58e47db3c6895 = L.marker(
+                [19.717511, -155.11317400000001],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_2fb123aea4d24555a88c0942779a26ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_154fe18b63da4705a2c58e47db3c6895.setIcon(icon_2fb123aea4d24555a88c0942779a26ba);
+        
+    
+        var popup_3c8f0a95f7af46009902659c27c5e067 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_456d16285df541a18b8523d3432b9048 = $(`<div id="html_456d16285df541a18b8523d3432b9048" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=YUKIO+OKUTSU+STATE+VETERANS+HOME target="_blank">YUKIO OKUTSU STATE VETERANS HOME</a></div>`)[0];
+            popup_3c8f0a95f7af46009902659c27c5e067.setContent(html_456d16285df541a18b8523d3432b9048);
+        
+
+        marker_154fe18b63da4705a2c58e47db3c6895.bindPopup(popup_3c8f0a95f7af46009902659c27c5e067)
+        ;
+
+        
+    
+    
+            var marker_13045ba13927431084350502338d70f3 = L.marker(
+                [20.879182, -156.476197],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_11d5a15a6c1b4f009a42843ccc203030 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_13045ba13927431084350502338d70f3.setIcon(icon_11d5a15a6c1b4f009a42843ccc203030);
+        
+    
+        var popup_28065288caa24946ad62486bd48d425c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aa4d53ba2a94e06988588e2ad7e1c03 = $(`<div id="html_6aa4d53ba2a94e06988588e2ad7e1c03" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+MAKUA+-+KAHULUI target="_blank">HALE MAKUA - KAHULUI</a></div>`)[0];
+            popup_28065288caa24946ad62486bd48d425c.setContent(html_6aa4d53ba2a94e06988588e2ad7e1c03);
+        
+
+        marker_13045ba13927431084350502338d70f3.bindPopup(popup_28065288caa24946ad62486bd48d425c)
+        ;
+
+        
+    
+    
+            var marker_dbc42a70685e410c9b0ae13918be1506 = L.marker(
+                [19.717467, -155.113513],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_25f51ec74c3e4fcdacdf4b167a721472 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dbc42a70685e410c9b0ae13918be1506.setIcon(icon_25f51ec74c3e4fcdacdf4b167a721472);
+        
+    
+        var popup_9ad1d9340ac54f219695265ee7b4a9ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbd1c64d97e34c179ca9fcdc65f56608 = $(`<div id="html_dbd1c64d97e34c179ca9fcdc65f56608" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HILO+MEDICAL+CENTER target="_blank">HILO MEDICAL CENTER</a></div>`)[0];
+            popup_9ad1d9340ac54f219695265ee7b4a9ac.setContent(html_dbd1c64d97e34c179ca9fcdc65f56608);
+        
+
+        marker_dbc42a70685e410c9b0ae13918be1506.bindPopup(popup_9ad1d9340ac54f219695265ee7b4a9ac)
+        ;
+
+        
+    
+    
+            var marker_548ccc09ccdd4560b1916765c58055e2 = L.marker(
+                [21.349305, -158.02935],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_6fea0987a86d48cca7d6fc7b3e46be97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_548ccc09ccdd4560b1916765c58055e2.setIcon(icon_6fea0987a86d48cca7d6fc7b3e46be97);
+        
+    
+        var popup_c40c600ed12d466a8cb66bc1b181b7e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8f312d2f7b6408093715b50acbb7e38 = $(`<div id="html_d8f312d2f7b6408093715b50acbb7e38" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KULANA+MALAMA target="_blank">KULANA MALAMA</a></div>`)[0];
+            popup_c40c600ed12d466a8cb66bc1b181b7e5.setContent(html_d8f312d2f7b6408093715b50acbb7e38);
+        
+
+        marker_548ccc09ccdd4560b1916765c58055e2.bindPopup(popup_c40c600ed12d466a8cb66bc1b181b7e5)
+        ;
+
+        
+    
+    
+            var marker_c95475459a684ae6b7719bed4cc74fb1 = L.marker(
+                [21.398187000000004, -157.7982],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_75f941f5e6a24a739f95d20feec8bdf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c95475459a684ae6b7719bed4cc74fb1.setIcon(icon_75f941f5e6a24a739f95d20feec8bdf6);
+        
+    
+        var popup_3a6a09f8c9b7444c8cb605648ef74994 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50ea6115376441158fa73ec6ca6f2043 = $(`<div id="html_50ea6115376441158fa73ec6ca6f2043" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ALOHA+NURSING+&+REHAB+CENTRE target="_blank">ALOHA NURSING & REHAB CENTRE</a></div>`)[0];
+            popup_3a6a09f8c9b7444c8cb605648ef74994.setContent(html_50ea6115376441158fa73ec6ca6f2043);
+        
+
+        marker_c95475459a684ae6b7719bed4cc74fb1.bindPopup(popup_3a6a09f8c9b7444c8cb605648ef74994)
+        ;
+
+        
+    
+    
+            var marker_339e0db9a9e84148a5a916b60323002c = L.marker(
+                [21.297697000000003, -157.788451],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_59502cdfefb24ca880e7a29a4d39ccd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_339e0db9a9e84148a5a916b60323002c.setIcon(icon_59502cdfefb24ca880e7a29a4d39ccd9);
+        
+    
+        var popup_0c0767d192134ea5ad33f1c38f794218 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_150a42459cf5473f82a0b6eeca2500b6 = $(`<div id="html_150a42459cf5473f82a0b6eeca2500b6" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=MAUNALANI+NURSING+AND+REHABILITATION+CENTER target="_blank">MAUNALANI NURSING AND REHABILITATION CENTER</a></div>`)[0];
+            popup_0c0767d192134ea5ad33f1c38f794218.setContent(html_150a42459cf5473f82a0b6eeca2500b6);
+        
+
+        marker_339e0db9a9e84148a5a916b60323002c.bindPopup(popup_0c0767d192134ea5ad33f1c38f794218)
+        ;
+
+        
+    
+    
+            var marker_06138a44268a48fdb971eec8c29eed85 = L.marker(
+                [21.301648, -157.833373],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_965c0892b564427094e997482a349346 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06138a44268a48fdb971eec8c29eed85.setIcon(icon_965c0892b564427094e997482a349346);
+        
+    
+        var popup_5f98294b5814421fb556f831ecac7183 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ccd4ca9bb84401db5e61067a0dceb66 = $(`<div id="html_9ccd4ca9bb84401db5e61067a0dceb66" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=ARCADIA+RETIREMENT+RESIDENCE target="_blank">ARCADIA RETIREMENT RESIDENCE</a></div>`)[0];
+            popup_5f98294b5814421fb556f831ecac7183.setContent(html_9ccd4ca9bb84401db5e61067a0dceb66);
+        
+
+        marker_06138a44268a48fdb971eec8c29eed85.bindPopup(popup_5f98294b5814421fb556f831ecac7183)
+        ;
+
+        
+    
+    
+            var marker_8a2cd2327d354891aecf1e2917b15930 = L.marker(
+                [21.322766, -157.855109],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_62178b5eeba6484fb602f1ede691bf40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8a2cd2327d354891aecf1e2917b15930.setIcon(icon_62178b5eeba6484fb602f1ede691bf40);
+        
+    
+        var popup_76ef222a6a444c39b1cad1dea0001979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a46d62d5fe7b47ac8346f479751a7c42 = $(`<div id="html_a46d62d5fe7b47ac8346f479751a7c42" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=THE+CARE+CENTER+OF+HONOLULU target="_blank">THE CARE CENTER OF HONOLULU</a></div>`)[0];
+            popup_76ef222a6a444c39b1cad1dea0001979.setContent(html_a46d62d5fe7b47ac8346f479751a7c42);
+        
+
+        marker_8a2cd2327d354891aecf1e2917b15930.bindPopup(popup_76ef222a6a444c39b1cad1dea0001979)
+        ;
+
+        
+    
+    
+            var marker_cb91a81fdf2348cdacc5caaf1d029fa5 = L.marker(
+                [21.328682, -157.851609],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_4390910cf9b64318bad33b30bfbf66d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cb91a81fdf2348cdacc5caaf1d029fa5.setIcon(icon_4390910cf9b64318bad33b30bfbf66d2);
+        
+    
+        var popup_831616ac66364261b28c828a9ddad69c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4842b8c7f2c6447696a6deb4b5a28906 = $(`<div id="html_4842b8c7f2c6447696a6deb4b5a28906" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=CLARENCE+TC+CHING+VILLAS+AT+ST+FRANCIS target="_blank">CLARENCE TC CHING VILLAS AT ST FRANCIS</a></div>`)[0];
+            popup_831616ac66364261b28c828a9ddad69c.setContent(html_4842b8c7f2c6447696a6deb4b5a28906);
+        
+
+        marker_cb91a81fdf2348cdacc5caaf1d029fa5.bindPopup(popup_831616ac66364261b28c828a9ddad69c)
+        ;
+
+        
+    
+    
+            var marker_b1415992b42c4767a30dfed3965101e7 = L.marker(
+                [19.7042, -155.111039],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_2bc31d4606c843fa98ece0ca08dc837d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b1415992b42c4767a30dfed3965101e7.setIcon(icon_2bc31d4606c843fa98ece0ca08dc837d);
+        
+    
+        var popup_be44f576edbe4cd180ce7cacae2051b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_927c5e1a1e604450b05c89860252e928 = $(`<div id="html_927c5e1a1e604450b05c89860252e928" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=LEGACY+HILO+REHABILITATION+&+NURSING+CENTER target="_blank">LEGACY HILO REHABILITATION & NURSING CENTER</a></div>`)[0];
+            popup_be44f576edbe4cd180ce7cacae2051b6.setContent(html_927c5e1a1e604450b05c89860252e928);
+        
+
+        marker_b1415992b42c4767a30dfed3965101e7.bindPopup(popup_be44f576edbe4cd180ce7cacae2051b6)
+        ;
+
+        
+    
+    
+            var marker_ba6d37eedf624623b3b9d579b18a7b23 = L.marker(
+                [21.303809, -157.78806],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_972e724a99644be7928ea4bc215c3198 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ba6d37eedf624623b3b9d579b18a7b23.setIcon(icon_972e724a99644be7928ea4bc215c3198);
+        
+    
+        var popup_528829420a804a47babf18057ed5a5cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6612eb0a19d415abc3d3d3e73bbf4ef = $(`<div id="html_d6612eb0a19d415abc3d3d3e73bbf4ef" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PALOLO+CHINESE+HOME target="_blank">PALOLO CHINESE HOME</a></div>`)[0];
+            popup_528829420a804a47babf18057ed5a5cd.setContent(html_d6612eb0a19d415abc3d3d3e73bbf4ef);
+        
+
+        marker_ba6d37eedf624623b3b9d579b18a7b23.bindPopup(popup_528829420a804a47babf18057ed5a5cd)
+        ;
+
+        
+    
+    
+            var marker_3b111634da954fb591b8941f1250ff1d = L.marker(
+                [21.285518, -157.720798],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_f94f6be0a014472fabc63f23d8fa0740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3b111634da954fb591b8941f1250ff1d.setIcon(icon_f94f6be0a014472fabc63f23d8fa0740);
+        
+    
+        var popup_a180a57f05d04229b0a74d034faae080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cc27bc9419942a696522539ee326825 = $(`<div id="html_2cc27bc9419942a696522539ee326825" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HALE+MALAMALAMA target="_blank">HALE MALAMALAMA</a></div>`)[0];
+            popup_a180a57f05d04229b0a74d034faae080.setContent(html_2cc27bc9419942a696522539ee326825);
+        
+
+        marker_3b111634da954fb591b8941f1250ff1d.bindPopup(popup_a180a57f05d04229b0a74d034faae080)
+        ;
+
+        
+    
+    
+            var marker_47c3ea8136e14d44ac950f18d3ff7d39 = L.marker(
+                [22.087619, -159.314204],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_d4fe2c54b67d4ef7a940a7421333522f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_47c3ea8136e14d44ac950f18d3ff7d39.setIcon(icon_d4fe2c54b67d4ef7a940a7421333522f);
+        
+    
+        var popup_a0024153bd7e4b7e99827cef98616d90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcc67c99ad7744368de74f5d566bfaf2 = $(`<div id="html_dcc67c99ad7744368de74f5d566bfaf2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SAMUEL+MAHELONA+MEMORIAL+HOSPITAL target="_blank">SAMUEL MAHELONA MEMORIAL HOSPITAL</a></div>`)[0];
+            popup_a0024153bd7e4b7e99827cef98616d90.setContent(html_dcc67c99ad7744368de74f5d566bfaf2);
+        
+
+        marker_47c3ea8136e14d44ac950f18d3ff7d39.bindPopup(popup_a0024153bd7e4b7e99827cef98616d90)
+        ;
+
+        
+    
+    
+            var marker_66bada12e3834336aa743e6571aa0584 = L.marker(
+                [20.231737, -155.797253],
+                {}
+            ).addTo(map_6af31f891ddd458a9c5cc7cd2bc40237);
+        
+    
+            var icon_c177e3a93d8f44659f343cbaf45053a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_66bada12e3834336aa743e6571aa0584.setIcon(icon_c177e3a93d8f44659f343cbaf45053a3);
+        
+    
+        var popup_7e9bdc070a924c60bc1fa04ac7e027ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c35fe41b808449ba00733b1b9f05eed = $(`<div id="html_4c35fe41b808449ba00733b1b9f05eed" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KOHALA+HOSPITAL target="_blank">KOHALA HOSPITAL</a></div>`)[0];
+            popup_7e9bdc070a924c60bc1fa04ac7e027ce.setContent(html_4c35fe41b808449ba00733b1b9f05eed);
+        
+
+        marker_66bada12e3834336aa743e6571aa0584.bindPopup(popup_7e9bdc070a924c60bc1fa04ac7e027ce)
+        ;
+
+        
+    
+</script>

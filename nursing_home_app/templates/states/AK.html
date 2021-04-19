@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c506e5e5461e401d8d450cc247f5ca05 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c506e5e5461e401d8d450cc247f5ca05" ></div>
+        
+</body>
+<script>    
+    
+            var map_c506e5e5461e401d8d450cc247f5ca05 = L.map(
+                "map_c506e5e5461e401d8d450cc247f5ca05",
+                {
+                    center: [61.133261, -132.955659],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79165a803abd493b9348b69ba27d6afc = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/jenfaith/ckm3ufeuf0v8y17qqi8d7gfre/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiamVuZmFpdGgiLCJhIjoiY2ttM3QzYnI1MDhzZTJucWRubXlzMHphdCJ9.3FsZLNb_YZlAwssJDfV4Cw",
+                {"attribution": "Map Box Attribute", "detectRetina": false, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var marker_a5318f1b142d4e7fae7c9e89a003e453 = L.marker(
+                [61.133261, -146.349974],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_24de29503b344934a3bffdc10c0cc8a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5318f1b142d4e7fae7c9e89a003e453.setIcon(icon_24de29503b344934a3bffdc10c0cc8a7);
+        
+    
+        var popup_e6645d6287df47489eea1d6499fe7fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a9fa20ff7047eebb1d00d39cbf76f0 = $(`<div id="html_f1a9fa20ff7047eebb1d00d39cbf76f0" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PROVIDENCE+VALDEZ+MEDICAL+CENTER target="_blank">PROVIDENCE VALDEZ MEDICAL CENTER</a></div>`)[0];
+            popup_e6645d6287df47489eea1d6499fe7fc7.setContent(html_f1a9fa20ff7047eebb1d00d39cbf76f0);
+        
+
+        marker_a5318f1b142d4e7fae7c9e89a003e453.bindPopup(popup_e6645d6287df47489eea1d6499fe7fc7)
+        ;
+
+        
+    
+    
+            var marker_3592a055adbb40af8a92bb87bb6e5dae = L.marker(
+                [56.812483, -132.955659],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_73c9a5eca3bc46619b14b7c0d28ba93e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3592a055adbb40af8a92bb87bb6e5dae.setIcon(icon_73c9a5eca3bc46619b14b7c0d28ba93e);
+        
+    
+        var popup_394f39e22d1b4e3dadf76958a6cd8dae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f873e90a9e5341848207f5802d85e4b3 = $(`<div id="html_f873e90a9e5341848207f5802d85e4b3" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PETERSBURG+MEDICAL+CENTER+LTC target="_blank">PETERSBURG MEDICAL CENTER LTC</a></div>`)[0];
+            popup_394f39e22d1b4e3dadf76958a6cd8dae.setContent(html_f873e90a9e5341848207f5802d85e4b3);
+        
+
+        marker_3592a055adbb40af8a92bb87bb6e5dae.bindPopup(popup_394f39e22d1b4e3dadf76958a6cd8dae)
+        ;
+
+        
+    
+    
+            var marker_2c6de271e3ee430bba7ba0e0acf48666 = L.marker(
+                [58.32931000000001, -134.464075],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_121f9a0412364b379e12f555edb4d526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2c6de271e3ee430bba7ba0e0acf48666.setIcon(icon_121f9a0412364b379e12f555edb4d526);
+        
+    
+        var popup_e0b1fc09abfc44149990378af85cb3d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0644be268754d6c9622fcb461e11385 = $(`<div id="html_c0644be268754d6c9622fcb461e11385" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=WILDFLOWER+COURT target="_blank">WILDFLOWER COURT</a></div>`)[0];
+            popup_e0b1fc09abfc44149990378af85cb3d4.setContent(html_c0644be268754d6c9622fcb461e11385);
+        
+
+        marker_2c6de271e3ee430bba7ba0e0acf48666.bindPopup(popup_e0b1fc09abfc44149990378af85cb3d4)
+        ;
+
+        
+    
+    
+            var marker_7d46b73fcd9e477fabfdbf25be3584c8 = L.marker(
+                [61.225333, -149.7151],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_bd9139c5852c476f999dba1dab31789a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7d46b73fcd9e477fabfdbf25be3584c8.setIcon(icon_bd9139c5852c476f999dba1dab31789a);
+        
+    
+        var popup_9a17b26caf1147eca3158f54ba9e7e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6216be2fcac496cbc062023a871cf29 = $(`<div id="html_d6216be2fcac496cbc062023a871cf29" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PRESTIGE+CARE+&+REHAB+CENTER+OF+ANCHORAGE target="_blank">PRESTIGE CARE & REHAB CENTER OF ANCHORAGE</a></div>`)[0];
+            popup_9a17b26caf1147eca3158f54ba9e7e9c.setContent(html_d6216be2fcac496cbc062023a871cf29);
+        
+
+        marker_7d46b73fcd9e477fabfdbf25be3584c8.bindPopup(popup_9a17b26caf1147eca3158f54ba9e7e9c)
+        ;
+
+        
+    
+    
+            var marker_bdd59521f7c545f8a02c4bee8dbe862c = L.marker(
+                [60.493166, -151.082422],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_44fd9245feb84cd6bfb1cec53388f335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bdd59521f7c545f8a02c4bee8dbe862c.setIcon(icon_44fd9245feb84cd6bfb1cec53388f335);
+        
+    
+        var popup_f2d80cbd90e941a9aa4bfd5492e76fb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fccec7d1afa34c9884c96a29a609b83f = $(`<div id="html_fccec7d1afa34c9884c96a29a609b83f" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=HERITAGE+PLACE target="_blank">HERITAGE PLACE</a></div>`)[0];
+            popup_f2d80cbd90e941a9aa4bfd5492e76fb6.setContent(html_fccec7d1afa34c9884c96a29a609b83f);
+        
+
+        marker_bdd59521f7c545f8a02c4bee8dbe862c.bindPopup(popup_f2d80cbd90e941a9aa4bfd5492e76fb6)
+        ;
+
+        
+    
+    
+            var marker_8dd5abc718924caf9c264ddc2f610fc2 = L.marker(
+                [64.830445, -147.742115],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_376a2bffb6c64930bbcff78b7e521524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8dd5abc718924caf9c264ddc2f610fc2.setIcon(icon_376a2bffb6c64930bbcff78b7e521524);
+        
+    
+        var popup_d5d461399ce642dea871c4ea76db7fe2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86de695464034ad0a2c11ea612e3d71f = $(`<div id="html_86de695464034ad0a2c11ea612e3d71f" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=DENALI+CENTER target="_blank">DENALI CENTER</a></div>`)[0];
+            popup_d5d461399ce642dea871c4ea76db7fe2.setContent(html_86de695464034ad0a2c11ea612e3d71f);
+        
+
+        marker_8dd5abc718924caf9c264ddc2f610fc2.bindPopup(popup_d5d461399ce642dea871c4ea76db7fe2)
+        ;
+
+        
+    
+    
+            var marker_65ef2c3d25a94d12801434dc7abdda86 = L.marker(
+                [61.212083, -149.773719],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_bec0bea5a4ea4ad5bb733fc03261fcb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_65ef2c3d25a94d12801434dc7abdda86.setIcon(icon_bec0bea5a4ea4ad5bb733fc03261fcb1);
+        
+    
+        var popup_47e17e94e22a4fb9bf0d37c45bb6567c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c930e521ea4277a055385aaea4b9d2 = $(`<div id="html_09c930e521ea4277a055385aaea4b9d2" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PROVIDENCE+TRANSITIONAL+CARE+CENTER target="_blank">PROVIDENCE TRANSITIONAL CARE CENTER</a></div>`)[0];
+            popup_47e17e94e22a4fb9bf0d37c45bb6567c.setContent(html_09c930e521ea4277a055385aaea4b9d2);
+        
+
+        marker_65ef2c3d25a94d12801434dc7abdda86.bindPopup(popup_47e17e94e22a4fb9bf0d37c45bb6567c)
+        ;
+
+        
+    
+    
+            var marker_7c14e2032fb1447484cb66a8abd69aa4 = L.marker(
+                [57.058992, -135.345929],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_d15eb8b4745d4886a14d3be0bbc28d4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7c14e2032fb1447484cb66a8abd69aa4.setIcon(icon_d15eb8b4745d4886a14d3be0bbc28d4a);
+        
+    
+        var popup_314120499059444cb60f32c870c5e6dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07c1593690f94f07a14983051b005e91 = $(`<div id="html_07c1593690f94f07a14983051b005e91" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SEARHC+SITKA+LONG+TERM+CARE target="_blank">SEARHC SITKA LONG TERM CARE</a></div>`)[0];
+            popup_314120499059444cb60f32c870c5e6dd.setContent(html_07c1593690f94f07a14983051b005e91);
+        
+
+        marker_7c14e2032fb1447484cb66a8abd69aa4.bindPopup(popup_314120499059444cb60f32c870c5e6dd)
+        ;
+
+        
+    
+    
+            var marker_8bc56291724447bdb731758e95acfa8b = L.marker(
+                [57.800835, -152.373943],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_997deb9fed8045b68f7def9a3cc9eba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8bc56291724447bdb731758e95acfa8b.setIcon(icon_997deb9fed8045b68f7def9a3cc9eba7);
+        
+    
+        var popup_0b6121fa502345b387db25fafa1e6582 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce1a54932a3d4bac9abee4eea89b2633 = $(`<div id="html_ce1a54932a3d4bac9abee4eea89b2633" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PROVIDENCE+KODIAK+ISLAND+MED+LTC target="_blank">PROVIDENCE KODIAK ISLAND MED LTC</a></div>`)[0];
+            popup_0b6121fa502345b387db25fafa1e6582.setContent(html_ce1a54932a3d4bac9abee4eea89b2633);
+        
+
+        marker_8bc56291724447bdb731758e95acfa8b.bindPopup(popup_0b6121fa502345b387db25fafa1e6582)
+        ;
+
+        
+    
+    
+            var marker_26057cf063d04f758e2e5ae0d1f8f163 = L.marker(
+                [66.895635, -162.589499],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_5ba8f9230bb9467b93fde257f74913cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_26057cf063d04f758e2e5ae0d1f8f163.setIcon(icon_5ba8f9230bb9467b93fde257f74913cd);
+        
+    
+        var popup_36301b28094348469c735aff6f825978 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_754bf4f3a4594295a6f0ae51433aa1d8 = $(`<div id="html_754bf4f3a4594295a6f0ae51433aa1d8" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=UTUQQANAAT+INAAT target="_blank">UTUQQANAAT INAAT</a></div>`)[0];
+            popup_36301b28094348469c735aff6f825978.setContent(html_754bf4f3a4594295a6f0ae51433aa1d8);
+        
+
+        marker_26057cf063d04f758e2e5ae0d1f8f163.bindPopup(popup_36301b28094348469c735aff6f825978)
+        ;
+
+        
+    
+    
+            var marker_2e30219732164735bf50c88546013144 = L.marker(
+                [55.352717, -131.686049],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_c919fe8c8327451f95b1d9b16adf021c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2e30219732164735bf50c88546013144.setIcon(icon_c919fe8c8327451f95b1d9b16adf021c);
+        
+    
+        var popup_040f803909434b41ba680ee438268041 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e7bf453899345458d50f61de2e68454 = $(`<div id="html_9e7bf453899345458d50f61de2e68454" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=KETCHIKAN+MED+CTR+NEW+HORIZONS+TRANSITIONAL+CARE target="_blank">KETCHIKAN MED CTR NEW HORIZONS TRANSITIONAL CARE</a></div>`)[0];
+            popup_040f803909434b41ba680ee438268041.setContent(html_9e7bf453899345458d50f61de2e68454);
+        
+
+        marker_2e30219732164735bf50c88546013144.bindPopup(popup_040f803909434b41ba680ee438268041)
+        ;
+
+        
+    
+    
+            var marker_5615bc83aca940b3be2d6ca42b2e3c81 = L.marker(
+                [61.213044, -149.774066],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_a2895214dd554325bce0d530da1ce4a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5615bc83aca940b3be2d6ca42b2e3c81.setIcon(icon_a2895214dd554325bce0d530da1ce4a1);
+        
+    
+        var popup_02ce5d4cba2e47a88c80f791e585f0bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbb9d1540f544fc5a7a9ec2d691b6803 = $(`<div id="html_fbb9d1540f544fc5a7a9ec2d691b6803" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=PROVIDENCE+EXTENDED+CARE target="_blank">PROVIDENCE EXTENDED CARE</a></div>`)[0];
+            popup_02ce5d4cba2e47a88c80f791e585f0bd.setContent(html_fbb9d1540f544fc5a7a9ec2d691b6803);
+        
+
+        marker_5615bc83aca940b3be2d6ca42b2e3c81.bindPopup(popup_02ce5d4cba2e47a88c80f791e585f0bd)
+        ;
+
+        
+    
+    
+            var marker_e65d195ebce44628ae8ec18d05a5d0bf = L.marker(
+                [59.652133000000006, -151.550296],
+                {}
+            ).addTo(map_c506e5e5461e401d8d450cc247f5ca05);
+        
+    
+            var icon_b474bd09b3d1496384f7a7715cc7f149 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e65d195ebce44628ae8ec18d05a5d0bf.setIcon(icon_b474bd09b3d1496384f7a7715cc7f149);
+        
+    
+        var popup_166818d56c064498978fb4ece133837d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58c944e8300b4c4cae7ae637d1305978 = $(`<div id="html_58c944e8300b4c4cae7ae637d1305978" style="width: 100.0%; height: 100.0%;"><a href= /report?facility_name=SOUTH+PENINSULA+HOSPITAL+LTC target="_blank">SOUTH PENINSULA HOSPITAL LTC</a></div>`)[0];
+            popup_166818d56c064498978fb4ece133837d.setContent(html_58c944e8300b4c4cae7ae637d1305978);
+        
+
+        marker_e65d195ebce44628ae8ec18d05a5d0bf.bindPopup(popup_166818d56c064498978fb4ece133837d)
+        ;
+
+        
+    
+</script>

@@ -27,6 +27,7 @@ spacy = "*"
 pyldavis = "*"
 python-dotenv = "*"
 flask-session = "*"
+pypdf2 = "*"
 
 [dev-packages]
 
