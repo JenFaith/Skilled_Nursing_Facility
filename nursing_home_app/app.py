@@ -143,17 +143,26 @@ def create_app():
                                htmlvar1=htmlvar_1, htmlvar2=htmlvar_2, htmlvar3=htmlvar_3)
     
     
-    @app.route('/location_search')
+    @app.route('/location_search', methods=['GET', 'POST'])
     def location_search():
         """
         Allows user to search by map for a facility. 
         """
-        return render_template('location_search.html')
+        state = request.args.get('State')
+        if not state:
+            msg = ' '
+            return render_template('location_search.html', state_name = msg)
+        else:
+            session['state']=state
+            return render_template('location_search.html', state_name = state)
     
-    @app.route('/state')
-    def state():
-        state=request.args.get('State')
+    @app.route('/statedisplay')
+    def statedisplay():
+        state = session['state']
+        if not state:
+            return render_template('states/none.html')
         return render_template('states/' + state + '.html')
+
     
     @app.route('/report', methods = ['GET', 'POST'])
     def report():
